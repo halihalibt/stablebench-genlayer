@@ -1,0 +1,8 @@
+{
+  "chain_id": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "protocol": "stablebench-1",
+  "contract": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+  "source_sha256": "9cb6018582f9dc947ffbc4b5f77ce4b75b966a2c3957a4b885006e3f7511e309",
+  "deploy_tx": "0x2f510cc23b81f7e50c92364cde83d991a917fa0794d669a542981ca0b04159ad"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "stablebench",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "python3 -m unittest discover -s tests -v",
+    "schema": "node scripts/network.mjs schema",
+    "live": "node scripts/live.mjs",
+    "verify": "node scripts/verify.mjs && python3 scripts/verify-proof.py"
+  },
+  "dependencies": {
+    "genlayer-js": "1.1.8",
+    "viem": "2.37.13"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "roster": {
+    "left": [
+      {
+        "id": "job-alpha",
+        "description": "Alpha: a small documentation test workload."
+      },
+      {
+        "id": "job-beta",
+        "description": "Beta: a CPU-heavy compiler test workload."
+      }
+    ],
+    "right": [
+      {
+        "id": "bench-quiet",
+        "description": "Quiet: a low-noise test bench."
+      },
+      {
+        "id": "bench-fast",
+        "description": "Fast: a high-speed test bench."
+      }
+    ]
+  },
+  "statements": {
+    "left": [
+      "Both benches are acceptable. Prefer the low-noise Quiet bench first, then the high-speed Fast bench.",
+      "Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench."
+    ],
+    "right": [
+      "Both workloads are acceptable. Prefer the CPU-heavy Beta compiler workload first, then the small Alpha documentation workload.",
+      "Both workloads are acceptable. Prefer the small Alpha documentation workload first, then the CPU-heavy Beta compiler workload."
+    ]
+  }
+}

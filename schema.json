@@ -1,0 +1,171 @@
+{
+  "ctor": {
+    "params": [],
+    "kwparams": {}
+  },
+  "methods": {
+    "approve": {
+      "params": [
+        [
+          "mid",
+          "string"
+        ],
+        [
+          "expected_revision",
+          "int"
+        ],
+        [
+          "selection_digest",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "cancel": {
+      "params": [
+        [
+          "mid",
+          "string"
+        ],
+        [
+          "expected_revision",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "compile_side": {
+      "params": [
+        [
+          "mid",
+          "string"
+        ],
+        [
+          "expected_revision",
+          "int"
+        ],
+        [
+          "side",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "create_market": {
+      "params": [
+        [
+          "reference",
+          "string"
+        ],
+        [
+          "bench_coordinator",
+          "string"
+        ],
+        [
+          "payload",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "get_market": {
+      "params": [
+        [
+          "mid",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "get_protocol": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "list_markets": {
+      "params": [],
+      "kwparams": {},
+      "readonly": true,
+      "ret": "string"
+    },
+    "seal_preferences": {
+      "params": [
+        [
+          "mid",
+          "string"
+        ],
+        [
+          "expected_revision",
+          "int"
+        ],
+        [
+          "side",
+          "string"
+        ],
+        [
+          "payload",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "select": {
+      "params": [
+        [
+          "mid",
+          "string"
+        ],
+        [
+          "expected_revision",
+          "int"
+        ],
+        [
+          "index",
+          "int"
+        ],
+        [
+          "certificate_hash",
+          "string"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    },
+    "solve": {
+      "params": [
+        [
+          "mid",
+          "string"
+        ],
+        [
+          "expected_revision",
+          "int"
+        ]
+      ],
+      "kwparams": {},
+      "readonly": false,
+      "ret": "string",
+      "payable": false
+    }
+  }
+}
