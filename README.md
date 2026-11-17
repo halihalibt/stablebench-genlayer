@@ -45,13 +45,15 @@ Node.js 22+ and Python 3.12+ are recommended. The only JavaScript dependencies a
 - [Deployment and actual calls](DEPLOYMENT.md)
 - [Real transaction journal](evidence/live.json)
 
-## Recorded transaction evidence
+## Verification
 
-10 local mocked-host unit tests passed. The stored real Studionet journal contains 9 FINALIZED/SUCCESS transactions and 4 FINALIZED expected contract rejections, with 1 submitted transaction still awaiting a terminal observation. The deployment was observed FINALIZED/SUCCESS and deployed source bytes matched the recorded SHA-256. **The full live acceptance run is not complete; this evidence is not a completed acceptance claim.**
+10 local mocked-host unit tests passed. The completed real Stable Studionet acceptance contains **22 FINALIZED transactions: 15 successful executions and 7 expected contract rejections**. Every positive transaction reached FINALIZED + SUCCESS. Negative cases reached FINALIZED with the exact expected error; they are not counted as successful writes.
 
-- Pending observation: `right-approval`, transaction `0xe8650d4fdc8a1a072e3597b48d6bf69b5f2c6851e76e9daa2020b90d989ee891`.
+An independent read-only run re-fetched every receipt, verified full consensus and majority agreement, decoded and matched sender/target/method/arguments, checked zero attached value using raw RPC metadata, compared deployed source bytes and re-read final state with `latest-final`. Offline recomputation then checked the complete mathematical certificate and its bindings. See [independent verification](evidence/verification.json) and [original transaction journal](evidence/live.json).
 
-`node scripts/check-journal.mjs` validates the integrity and identity of stored receipts offline; it is not a fresh chain read. `npm run live` resumes the original journal and signers without re-submitting recorded hashes. `npm run verify` deliberately refuses an incomplete journal; after completion it independently re-fetches receipts and final state and writes `evidence/verification.json`. Local CI validates source tests and stored-record integrity; neither substitutes for completed live acceptance.
+The primary market is COMMITTED with two stable assignments (`[0,1]` and `[1,0]`), seven individually rational candidates checked, five blocking-pair witnesses, and both distinct coordinator approvals of the same selected digest. The uncertain market retained UNKNOWN, could not be solved, and was cancelled. Unauthorized side input, premature solving, incorrect digest, duplicate approval, committed replay and stale revision were rejected onchain.
+
+`npm run verify` independently re-reads chain evidence without signing or resubmitting. `node scripts/check-journal.mjs` checks stored-receipt integrity offline. CI runs local unit tests, stored-record checks and finalized-proof recomputation; CI itself does not replace the real network acceptance or make new transactions. Temporary acceptance keys were removed after completion.
 
 ## Scope and limits
 

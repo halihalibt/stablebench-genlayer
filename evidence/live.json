@@ -3275,7 +3275,2360 @@
       "expected_error": null,
       "hash": "0xe8650d4fdc8a1a072e3597b48d6bf69b5f2c6851e76e9daa2020b90d989ee891",
       "submitted_at": "2026-11-17T15:37:24.741Z",
-      "observed_status": "PENDING"
+      "observed_status": "FINALIZED",
+      "receipt": {
+        "hash": "0xe8650d4fdc8a1a072e3597b48d6bf69b5f2c6851e76e9daa2020b90d989ee891",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "from": "0x9E6988226843dD5832B032c06cAefCaAB22d8C16",
+        "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+        "data": {
+          "calldata": {
+            "base64": "FgRhcmdzHawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWI5hARhZDE4ZTNhYzFiODg3MTYzNmRhYzgwNDlkNWZiOTZhODg2Yjg2ODI1YmYwN2YwODU3Y2NlODQ1YjUzZGE3Y2M4Bm1ldGhvZDxhcHByb3Zl",
+            "raw": [
+              22,
+              4,
+              97,
+              114,
+              103,
+              115,
+              29,
+              172,
+              3,
+              48,
+              120,
+              48,
+              97,
+              57,
+              97,
+              97,
+              53,
+              57,
+              99,
+              57,
+              56,
+              98,
+              101,
+              98,
+              97,
+              99,
+              56,
+              101,
+              99,
+              54,
+              101,
+              48,
+              99,
+              97,
+              48,
+              50,
+              48,
+              57,
+              56,
+              54,
+              56,
+              101,
+              50,
+              98,
+              50,
+              51,
+              48,
+              49,
+              50,
+              99,
+              51,
+              58,
+              115,
+              116,
+              97,
+              98,
+              108,
+              101,
+              45,
+              108,
+              97,
+              98,
+              57,
+              132,
+              4,
+              97,
+              100,
+              49,
+              56,
+              101,
+              51,
+              97,
+              99,
+              49,
+              98,
+              56,
+              56,
+              55,
+              49,
+              54,
+              51,
+              54,
+              100,
+              97,
+              99,
+              56,
+              48,
+              52,
+              57,
+              100,
+              53,
+              102,
+              98,
+              57,
+              54,
+              97,
+              56,
+              56,
+              54,
+              98,
+              56,
+              54,
+              56,
+              50,
+              53,
+              98,
+              102,
+              48,
+              55,
+              102,
+              48,
+              56,
+              53,
+              55,
+              99,
+              99,
+              101,
+              56,
+              52,
+              53,
+              98,
+              53,
+              51,
+              100,
+              97,
+              55,
+              99,
+              99,
+              56,
+              6,
+              109,
+              101,
+              116,
+              104,
+              111,
+              100,
+              60,
+              97,
+              112,
+              112,
+              114,
+              111,
+              118,
+              101
+            ],
+            "readable": "{\"args\":[\"0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:stable-lab\",7,\"ad18e3ac1b8871636dac8049d5fb96a886b86825bf07f0857cce845b53da7cc8\",]\"method\":\"approve\"}"
+          }
+        },
+        "leader_only": false,
+        "votes": {
+          "0x29A864a96A51c4e816ef65E95f18F0dfF2165569": "idle",
+          "0x5Bf68b9b661C86D6083B2F67faf19fF649a8a203": "agree",
+          "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba": "agree",
+          "0x91d3032d39177dD187665b345954fA5809D8a574": "agree",
+          "0x9e716966Fbc31a155250000CfC6C5E0aefbA9a95": "agree"
+        },
+        "rounds": [
+          {
+            "round": "Accepted",
+            "leaders": [
+              {
+                "mode": "leader",
+                "vote": null,
+                "execution": "SUCCESS"
+              },
+              {
+                "mode": "validator",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              }
+            ],
+            "validators": [
+              {
+                "address": "0x5Bf68b9b661C86D6083B2F67faf19fF649a8a203",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              },
+              {
+                "address": "0x29A864a96A51c4e816ef65E95f18F0dfF2165569",
+                "vote": "idle",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0x91d3032d39177dD187665b345954fA5809D8a574",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              },
+              {
+                "address": "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "reject-committed-replay",
+      "sender": "0x9e6988226843dd5832b032c06caefcaab22d8c16",
+      "method": "approve",
+      "args": [
+        "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:stable-lab",
+        8,
+        "ad18e3ac1b8871636dac8049d5fb96a886b86825bf07f0857cce845b53da7cc8"
+      ],
+      "expected_error": "SELECTION_NOT_PENDING",
+      "hash": "0xeed9bcde7d3556ed654e8241916698ec0f1bd683f1955454e99581065cd0fa86",
+      "submitted_at": "2026-11-17T15:57:11.719Z",
+      "observed_status": "FINALIZED",
+      "receipt": {
+        "hash": "0xeed9bcde7d3556ed654e8241916698ec0f1bd683f1955454e99581065cd0fa86",
+        "status": "FINALIZED",
+        "execution": "ERROR",
+        "from": "0x9E6988226843dD5832B032c06cAefCaAB22d8C16",
+        "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+        "data": {
+          "calldata": {
+            "base64": "FgRhcmdzHawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWJBhARhZDE4ZTNhYzFiODg3MTYzNmRhYzgwNDlkNWZiOTZhODg2Yjg2ODI1YmYwN2YwODU3Y2NlODQ1YjUzZGE3Y2M4Bm1ldGhvZDxhcHByb3Zl",
+            "raw": [
+              22,
+              4,
+              97,
+              114,
+              103,
+              115,
+              29,
+              172,
+              3,
+              48,
+              120,
+              48,
+              97,
+              57,
+              97,
+              97,
+              53,
+              57,
+              99,
+              57,
+              56,
+              98,
+              101,
+              98,
+              97,
+              99,
+              56,
+              101,
+              99,
+              54,
+              101,
+              48,
+              99,
+              97,
+              48,
+              50,
+              48,
+              57,
+              56,
+              54,
+              56,
+              101,
+              50,
+              98,
+              50,
+              51,
+              48,
+              49,
+              50,
+              99,
+              51,
+              58,
+              115,
+              116,
+              97,
+              98,
+              108,
+              101,
+              45,
+              108,
+              97,
+              98,
+              65,
+              132,
+              4,
+              97,
+              100,
+              49,
+              56,
+              101,
+              51,
+              97,
+              99,
+              49,
+              98,
+              56,
+              56,
+              55,
+              49,
+              54,
+              51,
+              54,
+              100,
+              97,
+              99,
+              56,
+              48,
+              52,
+              57,
+              100,
+              53,
+              102,
+              98,
+              57,
+              54,
+              97,
+              56,
+              56,
+              54,
+              98,
+              56,
+              54,
+              56,
+              50,
+              53,
+              98,
+              102,
+              48,
+              55,
+              102,
+              48,
+              56,
+              53,
+              55,
+              99,
+              99,
+              101,
+              56,
+              52,
+              53,
+              98,
+              53,
+              51,
+              100,
+              97,
+              55,
+              99,
+              99,
+              56,
+              6,
+              109,
+              101,
+              116,
+              104,
+              111,
+              100,
+              60,
+              97,
+              112,
+              112,
+              114,
+              111,
+              118,
+              101
+            ],
+            "readable": "{\"args\":[\"0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:stable-lab\",8,\"ad18e3ac1b8871636dac8049d5fb96a886b86825bf07f0857cce845b53da7cc8\",]\"method\":\"approve\"}"
+          }
+        },
+        "leader_only": false,
+        "votes": {
+          "0x3720CfC92ACB431F215673A7b5F315B5efe1A4D6": "agree",
+          "0x87DD12658711db28B41C1fBB516236088D214fAD": "idle",
+          "0x91d3032d39177dD187665b345954fA5809D8a574": "idle",
+          "0xc3Acc646761d7BC43a47ccEB1F60E7078B1d51Fc": "agree",
+          "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639": "agree"
+        },
+        "rounds": [
+          {
+            "round": "Accepted",
+            "leaders": [
+              {
+                "mode": "leader",
+                "vote": null,
+                "execution": "ERROR",
+                "error": "Exception: SELECTION_NOT_PENDING"
+              },
+              {
+                "mode": "validator",
+                "vote": "agree",
+                "execution": "ERROR",
+                "error": "Exception: SELECTION_NOT_PENDING"
+              }
+            ],
+            "validators": [
+              {
+                "address": "0x3720CfC92ACB431F215673A7b5F315B5efe1A4D6",
+                "vote": "agree",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0x87DD12658711db28B41C1fBB516236088D214fAD",
+                "vote": "idle",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639",
+                "vote": "agree",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0x91d3032d39177dD187665b345954fA5809D8a574",
+                "vote": "idle",
+                "execution": "ERROR"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "reject-stale-cancellation",
+      "sender": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3",
+      "method": "cancel",
+      "args": [
+        "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:stable-lab",
+        0
+      ],
+      "expected_error": "STALE_REVISION",
+      "hash": "0x5551b90a93d8a16bac703ae0ab28d784f3048a15209b2dd80c5ab1acd2dc8163",
+      "submitted_at": "2026-11-17T16:00:18.612Z",
+      "observed_status": "FINALIZED",
+      "receipt": {
+        "hash": "0x5551b90a93d8a16bac703ae0ab28d784f3048a15209b2dd80c5ab1acd2dc8163",
+        "status": "FINALIZED",
+        "execution": "ERROR",
+        "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+        "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+        "data": {
+          "calldata": {
+            "base64": "FgRhcmdzFawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWIBBm1ldGhvZDRjYW5jZWw=",
+            "raw": [
+              22,
+              4,
+              97,
+              114,
+              103,
+              115,
+              21,
+              172,
+              3,
+              48,
+              120,
+              48,
+              97,
+              57,
+              97,
+              97,
+              53,
+              57,
+              99,
+              57,
+              56,
+              98,
+              101,
+              98,
+              97,
+              99,
+              56,
+              101,
+              99,
+              54,
+              101,
+              48,
+              99,
+              97,
+              48,
+              50,
+              48,
+              57,
+              56,
+              54,
+              56,
+              101,
+              50,
+              98,
+              50,
+              51,
+              48,
+              49,
+              50,
+              99,
+              51,
+              58,
+              115,
+              116,
+              97,
+              98,
+              108,
+              101,
+              45,
+              108,
+              97,
+              98,
+              1,
+              6,
+              109,
+              101,
+              116,
+              104,
+              111,
+              100,
+              52,
+              99,
+              97,
+              110,
+              99,
+              101,
+              108
+            ],
+            "readable": "{\"args\":[\"0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:stable-lab\",0,]\"method\":\"cancel\"}"
+          }
+        },
+        "leader_only": false,
+        "votes": {
+          "0x70C9Ed8761ac32887e536D03657bfADAD436210F": "agree",
+          "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba": "agree",
+          "0x91d3032d39177dD187665b345954fA5809D8a574": "idle",
+          "0xAfA5B76d8c2b976097406893b59C499b5D92D878": "agree",
+          "0xc0570E16E935531dee442333d199fCdA4Ba9e6f1": "agree"
+        },
+        "rounds": [
+          {
+            "round": "Accepted",
+            "leaders": [
+              {
+                "mode": "leader",
+                "vote": null,
+                "execution": "ERROR",
+                "error": "Exception: STALE_REVISION"
+              },
+              {
+                "mode": "validator",
+                "vote": "agree",
+                "execution": "ERROR",
+                "error": "Exception: STALE_REVISION"
+              }
+            ],
+            "validators": [
+              {
+                "address": "0x91d3032d39177dD187665b345954fA5809D8a574",
+                "vote": "idle",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0xAfA5B76d8c2b976097406893b59C499b5D92D878",
+                "vote": "agree",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0xc0570E16E935531dee442333d199fCdA4Ba9e6f1",
+                "vote": "agree",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0x70C9Ed8761ac32887e536D03657bfADAD436210F",
+                "vote": "agree",
+                "execution": "ERROR"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "create-uncertain-market",
+      "sender": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3",
+      "method": "create_market",
+      "args": [
+        "uncertain-lab",
+        "0x9e6988226843dd5832b032c06caefcaab22d8c16",
+        "{\"left\":[{\"id\":\"job-alpha\",\"description\":\"Alpha: a small documentation test workload.\"},{\"id\":\"job-beta\",\"description\":\"Beta: a CPU-heavy compiler test workload.\"}],\"right\":[{\"id\":\"bench-quiet\",\"description\":\"Quiet: a low-noise test bench.\"},{\"id\":\"bench-fast\",\"description\":\"Fast: a high-speed test bench.\"}]}"
+      ],
+      "expected_error": null,
+      "hash": "0x7f1510eb7b5ff8d72b589cb139b7b96f651063d993b99d7277f4a7247fa23a3e",
+      "submitted_at": "2026-11-17T16:02:01.081Z",
+      "observed_status": "FINALIZED",
+      "receipt": {
+        "hash": "0x7f1510eb7b5ff8d72b589cb139b7b96f651063d993b99d7277f4a7247fa23a3e",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+        "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+        "data": {
+          "calldata": {
+            "base64": "FgRhcmdzHWx1bmNlcnRhaW4tbGFi1AIweDllNjk4ODIyNjg0M2RkNTgzMmIwMzJjMDZjYWVmY2FhYjIyZDhjMTa0E3sibGVmdCI6W3siaWQiOiJqb2ItYWxwaGEiLCJkZXNjcmlwdGlvbiI6IkFscGhhOiBhIHNtYWxsIGRvY3VtZW50YXRpb24gdGVzdCB3b3JrbG9hZC4ifSx7ImlkIjoiam9iLWJldGEiLCJkZXNjcmlwdGlvbiI6IkJldGE6IGEgQ1BVLWhlYXZ5IGNvbXBpbGVyIHRlc3Qgd29ya2xvYWQuIn1dLCJyaWdodCI6W3siaWQiOiJiZW5jaC1xdWlldCIsImRlc2NyaXB0aW9uIjoiUXVpZXQ6IGEgbG93LW5vaXNlIHRlc3QgYmVuY2guIn0seyJpZCI6ImJlbmNoLWZhc3QiLCJkZXNjcmlwdGlvbiI6IkZhc3Q6IGEgaGlnaC1zcGVlZCB0ZXN0IGJlbmNoLiJ9XX0GbWV0aG9kbGNyZWF0ZV9tYXJrZXQ=",
+            "raw": [
+              22,
+              4,
+              97,
+              114,
+              103,
+              115,
+              29,
+              108,
+              117,
+              110,
+              99,
+              101,
+              114,
+              116,
+              97,
+              105,
+              110,
+              45,
+              108,
+              97,
+              98,
+              212,
+              2,
+              48,
+              120,
+              57,
+              101,
+              54,
+              57,
+              56,
+              56,
+              50,
+              50,
+              54,
+              56,
+              52,
+              51,
+              100,
+              100,
+              53,
+              56,
+              51,
+              50,
+              98,
+              48,
+              51,
+              50,
+              99,
+              48,
+              54,
+              99,
+              97,
+              101,
+              102,
+              99,
+              97,
+              97,
+              98,
+              50,
+              50,
+              100,
+              56,
+              99,
+              49,
+              54,
+              180,
+              19,
+              123,
+              34,
+              108,
+              101,
+              102,
+              116,
+              34,
+              58,
+              91,
+              123,
+              34,
+              105,
+              100,
+              34,
+              58,
+              34,
+              106,
+              111,
+              98,
+              45,
+              97,
+              108,
+              112,
+              104,
+              97,
+              34,
+              44,
+              34,
+              100,
+              101,
+              115,
+              99,
+              114,
+              105,
+              112,
+              116,
+              105,
+              111,
+              110,
+              34,
+              58,
+              34,
+              65,
+              108,
+              112,
+              104,
+              97,
+              58,
+              32,
+              97,
+              32,
+              115,
+              109,
+              97,
+              108,
+              108,
+              32,
+              100,
+              111,
+              99,
+              117,
+              109,
+              101,
+              110,
+              116,
+              97,
+              116,
+              105,
+              111,
+              110,
+              32,
+              116,
+              101,
+              115,
+              116,
+              32,
+              119,
+              111,
+              114,
+              107,
+              108,
+              111,
+              97,
+              100,
+              46,
+              34,
+              125,
+              44,
+              123,
+              34,
+              105,
+              100,
+              34,
+              58,
+              34,
+              106,
+              111,
+              98,
+              45,
+              98,
+              101,
+              116,
+              97,
+              34,
+              44,
+              34,
+              100,
+              101,
+              115,
+              99,
+              114,
+              105,
+              112,
+              116,
+              105,
+              111,
+              110,
+              34,
+              58,
+              34,
+              66,
+              101,
+              116,
+              97,
+              58,
+              32,
+              97,
+              32,
+              67,
+              80,
+              85,
+              45,
+              104,
+              101,
+              97,
+              118,
+              121,
+              32,
+              99,
+              111,
+              109,
+              112,
+              105,
+              108,
+              101,
+              114,
+              32,
+              116,
+              101,
+              115,
+              116,
+              32,
+              119,
+              111,
+              114,
+              107,
+              108,
+              111,
+              97,
+              100,
+              46,
+              34,
+              125,
+              93,
+              44,
+              34,
+              114,
+              105,
+              103,
+              104,
+              116,
+              34,
+              58,
+              91,
+              123,
+              34,
+              105,
+              100,
+              34,
+              58,
+              34,
+              98,
+              101,
+              110,
+              99,
+              104,
+              45,
+              113,
+              117,
+              105,
+              101,
+              116,
+              34,
+              44,
+              34,
+              100,
+              101,
+              115,
+              99,
+              114,
+              105,
+              112,
+              116,
+              105,
+              111,
+              110,
+              34,
+              58,
+              34,
+              81,
+              117,
+              105,
+              101,
+              116,
+              58,
+              32,
+              97,
+              32,
+              108,
+              111,
+              119,
+              45,
+              110,
+              111,
+              105,
+              115,
+              101,
+              32,
+              116,
+              101,
+              115,
+              116,
+              32,
+              98,
+              101,
+              110,
+              99,
+              104,
+              46,
+              34,
+              125,
+              44,
+              123,
+              34,
+              105,
+              100,
+              34,
+              58,
+              34,
+              98,
+              101,
+              110,
+              99,
+              104,
+              45,
+              102,
+              97,
+              115,
+              116,
+              34,
+              44,
+              34,
+              100,
+              101,
+              115,
+              99,
+              114,
+              105,
+              112,
+              116,
+              105,
+              111,
+              110,
+              34,
+              58,
+              34,
+              70,
+              97,
+              115,
+              116,
+              58,
+              32,
+              97,
+              32,
+              104,
+              105,
+              103,
+              104,
+              45,
+              115,
+              112,
+              101,
+              101,
+              100,
+              32,
+              116,
+              101,
+              115,
+              116,
+              32,
+              98,
+              101,
+              110,
+              99,
+              104,
+              46,
+              34,
+              125,
+              93,
+              125,
+              6,
+              109,
+              101,
+              116,
+              104,
+              111,
+              100,
+              108,
+              99,
+              114,
+              101,
+              97,
+              116,
+              101,
+              95,
+              109,
+              97,
+              114,
+              107,
+              101,
+              116
+            ],
+            "readable": "{\"args\":[\"uncertain-lab\",\"0x9e6988226843dd5832b032c06caefcaab22d8c16\",\"{\\\"left\\\":[{\\\"id\\\":\\\"job-alpha\\\",\\\"description\\\":\\\"Alpha: a small documentation test workload.\\\"},{\\\"id\\\":\\\"job-beta\\\",\\\"description\\\":\\\"Beta: a CPU-heavy compiler test workload.\\\"}],\\\"right\\\":[{\\\"id\\\":\\\"bench-quiet\\\",\\\"description\\\":\\\"Quiet: a low-noise test bench.\\\"},{\\\"id\\\":\\\"bench-fast\\\",\\\"description\\\":\\\"Fast: a high-speed test bench.\\\"}]}\",]\"method\":\"create_market\"}"
+          }
+        },
+        "leader_only": false,
+        "votes": {
+          "0x215c6BA80EdD9a47856D63E959A32AFE6B5Aa575": "agree",
+          "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba": "agree",
+          "0x9e716966Fbc31a155250000CfC6C5E0aefbA9a95": "idle",
+          "0xE7a7f994107b733CcBe5d0a288FB37A9EB3A0687": "idle",
+          "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639": "agree"
+        },
+        "rounds": [
+          {
+            "round": "Accepted",
+            "leaders": [
+              {
+                "mode": "leader",
+                "vote": null,
+                "execution": "SUCCESS"
+              },
+              {
+                "mode": "validator",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              }
+            ],
+            "validators": [
+              {
+                "address": "0xE7a7f994107b733CcBe5d0a288FB37A9EB3A0687",
+                "vote": "idle",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              },
+              {
+                "address": "0x9e716966Fbc31a155250000CfC6C5E0aefbA9a95",
+                "vote": "idle",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "uncertain-seal-left",
+      "sender": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3",
+      "method": "seal_preferences",
+      "args": [
+        "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab",
+        0,
+        "left",
+        "[\"Choose whatever is appropriate; I have not specified any ordering or acceptability of these benches.\",\"Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench.\"]"
+      ],
+      "expected_error": null,
+      "hash": "0x7536cead4953f0c1456d1e0a7bfad6752cbd4a109d673cc81fa37a7215c9e3a9",
+      "submitted_at": "2026-11-17T16:02:51.971Z",
+      "observed_status": "FINALIZED",
+      "receipt": {
+        "hash": "0x7536cead4953f0c1456d1e0a7bfad6752cbd4a109d673cc81fa37a7215c9e3a9",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+        "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+        "data": {
+          "calldata": {
+            "base64": "FgRhcmdzJcQDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnVuY2VydGFpbi1sYWIBJGxlZnT8DFsiQ2hvb3NlIHdoYXRldmVyIGlzIGFwcHJvcHJpYXRlOyBJIGhhdmUgbm90IHNwZWNpZmllZCBhbnkgb3JkZXJpbmcgb3IgYWNjZXB0YWJpbGl0eSBvZiB0aGVzZSBiZW5jaGVzLiIsIkJvdGggYmVuY2hlcyBhcmUgYWNjZXB0YWJsZS4gUHJlZmVyIHRoZSBoaWdoLXNwZWVkIEZhc3QgYmVuY2ggZmlyc3QsIHRoZW4gdGhlIGxvdy1ub2lzZSBRdWlldCBiZW5jaC4iXQZtZXRob2SEAXNlYWxfcHJlZmVyZW5jZXM=",
+            "raw": [
+              22,
+              4,
+              97,
+              114,
+              103,
+              115,
+              37,
+              196,
+              3,
+              48,
+              120,
+              48,
+              97,
+              57,
+              97,
+              97,
+              53,
+              57,
+              99,
+              57,
+              56,
+              98,
+              101,
+              98,
+              97,
+              99,
+              56,
+              101,
+              99,
+              54,
+              101,
+              48,
+              99,
+              97,
+              48,
+              50,
+              48,
+              57,
+              56,
+              54,
+              56,
+              101,
+              50,
+              98,
+              50,
+              51,
+              48,
+              49,
+              50,
+              99,
+              51,
+              58,
+              117,
+              110,
+              99,
+              101,
+              114,
+              116,
+              97,
+              105,
+              110,
+              45,
+              108,
+              97,
+              98,
+              1,
+              36,
+              108,
+              101,
+              102,
+              116,
+              252,
+              12,
+              91,
+              34,
+              67,
+              104,
+              111,
+              111,
+              115,
+              101,
+              32,
+              119,
+              104,
+              97,
+              116,
+              101,
+              118,
+              101,
+              114,
+              32,
+              105,
+              115,
+              32,
+              97,
+              112,
+              112,
+              114,
+              111,
+              112,
+              114,
+              105,
+              97,
+              116,
+              101,
+              59,
+              32,
+              73,
+              32,
+              104,
+              97,
+              118,
+              101,
+              32,
+              110,
+              111,
+              116,
+              32,
+              115,
+              112,
+              101,
+              99,
+              105,
+              102,
+              105,
+              101,
+              100,
+              32,
+              97,
+              110,
+              121,
+              32,
+              111,
+              114,
+              100,
+              101,
+              114,
+              105,
+              110,
+              103,
+              32,
+              111,
+              114,
+              32,
+              97,
+              99,
+              99,
+              101,
+              112,
+              116,
+              97,
+              98,
+              105,
+              108,
+              105,
+              116,
+              121,
+              32,
+              111,
+              102,
+              32,
+              116,
+              104,
+              101,
+              115,
+              101,
+              32,
+              98,
+              101,
+              110,
+              99,
+              104,
+              101,
+              115,
+              46,
+              34,
+              44,
+              34,
+              66,
+              111,
+              116,
+              104,
+              32,
+              98,
+              101,
+              110,
+              99,
+              104,
+              101,
+              115,
+              32,
+              97,
+              114,
+              101,
+              32,
+              97,
+              99,
+              99,
+              101,
+              112,
+              116,
+              97,
+              98,
+              108,
+              101,
+              46,
+              32,
+              80,
+              114,
+              101,
+              102,
+              101,
+              114,
+              32,
+              116,
+              104,
+              101,
+              32,
+              104,
+              105,
+              103,
+              104,
+              45,
+              115,
+              112,
+              101,
+              101,
+              100,
+              32,
+              70,
+              97,
+              115,
+              116,
+              32,
+              98,
+              101,
+              110,
+              99,
+              104,
+              32,
+              102,
+              105,
+              114,
+              115,
+              116,
+              44,
+              32,
+              116,
+              104,
+              101,
+              110,
+              32,
+              116,
+              104,
+              101,
+              32,
+              108,
+              111,
+              119,
+              45,
+              110,
+              111,
+              105,
+              115,
+              101,
+              32,
+              81,
+              117,
+              105,
+              101,
+              116,
+              32,
+              98,
+              101,
+              110,
+              99,
+              104,
+              46,
+              34,
+              93,
+              6,
+              109,
+              101,
+              116,
+              104,
+              111,
+              100,
+              132,
+              1,
+              115,
+              101,
+              97,
+              108,
+              95,
+              112,
+              114,
+              101,
+              102,
+              101,
+              114,
+              101,
+              110,
+              99,
+              101,
+              115
+            ],
+            "readable": "{\"args\":[\"0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab\",0,\"left\",\"[\\\"Choose whatever is appropriate; I have not specified any ordering or acceptability of these benches.\\\",\\\"Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench.\\\"]\",]\"method\":\"seal_preferences\"}"
+          }
+        },
+        "leader_only": false,
+        "votes": {
+          "0x70C9Ed8761ac32887e536D03657bfADAD436210F": "agree",
+          "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba": "idle",
+          "0x87DD12658711db28B41C1fBB516236088D214fAD": "agree",
+          "0x8D9E52A3c9Ad95D2Be9987AD2C3919F5460DDc3e": "agree",
+          "0x9e716966Fbc31a155250000CfC6C5E0aefbA9a95": "idle"
+        },
+        "rounds": [
+          {
+            "round": "Accepted",
+            "leaders": [
+              {
+                "mode": "leader",
+                "vote": null,
+                "execution": "SUCCESS"
+              },
+              {
+                "mode": "validator",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              }
+            ],
+            "validators": [
+              {
+                "address": "0x87DD12658711db28B41C1fBB516236088D214fAD",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              },
+              {
+                "address": "0x9e716966Fbc31a155250000CfC6C5E0aefbA9a95",
+                "vote": "idle",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba",
+                "vote": "idle",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0x70C9Ed8761ac32887e536D03657bfADAD436210F",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "uncertain-seal-right",
+      "sender": "0x9e6988226843dd5832b032c06caefcaab22d8c16",
+      "method": "seal_preferences",
+      "args": [
+        "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab",
+        1,
+        "right",
+        "[\"Both workloads are acceptable. Prefer the CPU-heavy Beta compiler workload first, then the small Alpha documentation workload.\",\"Both workloads are acceptable. Prefer the small Alpha documentation workload first, then the CPU-heavy Beta compiler workload.\"]"
+      ],
+      "expected_error": null,
+      "hash": "0xbf292a90327fd12d031360c28cda7f72eaa5663dcbef78bbbc45cd40920fe7f7",
+      "submitted_at": "2026-11-17T16:03:56.221Z",
+      "observed_status": "FINALIZED",
+      "receipt": {
+        "hash": "0xbf292a90327fd12d031360c28cda7f72eaa5663dcbef78bbbc45cd40920fe7f7",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "from": "0x9E6988226843dD5832B032c06cAefCaAB22d8C16",
+        "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+        "data": {
+          "calldata": {
+            "base64": "FgRhcmdzJcQDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnVuY2VydGFpbi1sYWIJLHJpZ2h0nBBbIkJvdGggd29ya2xvYWRzIGFyZSBhY2NlcHRhYmxlLiBQcmVmZXIgdGhlIENQVS1oZWF2eSBCZXRhIGNvbXBpbGVyIHdvcmtsb2FkIGZpcnN0LCB0aGVuIHRoZSBzbWFsbCBBbHBoYSBkb2N1bWVudGF0aW9uIHdvcmtsb2FkLiIsIkJvdGggd29ya2xvYWRzIGFyZSBhY2NlcHRhYmxlLiBQcmVmZXIgdGhlIHNtYWxsIEFscGhhIGRvY3VtZW50YXRpb24gd29ya2xvYWQgZmlyc3QsIHRoZW4gdGhlIENQVS1oZWF2eSBCZXRhIGNvbXBpbGVyIHdvcmtsb2FkLiJdBm1ldGhvZIQBc2VhbF9wcmVmZXJlbmNlcw==",
+            "raw": [
+              22,
+              4,
+              97,
+              114,
+              103,
+              115,
+              37,
+              196,
+              3,
+              48,
+              120,
+              48,
+              97,
+              57,
+              97,
+              97,
+              53,
+              57,
+              99,
+              57,
+              56,
+              98,
+              101,
+              98,
+              97,
+              99,
+              56,
+              101,
+              99,
+              54,
+              101,
+              48,
+              99,
+              97,
+              48,
+              50,
+              48,
+              57,
+              56,
+              54,
+              56,
+              101,
+              50,
+              98,
+              50,
+              51,
+              48,
+              49,
+              50,
+              99,
+              51,
+              58,
+              117,
+              110,
+              99,
+              101,
+              114,
+              116,
+              97,
+              105,
+              110,
+              45,
+              108,
+              97,
+              98,
+              9,
+              44,
+              114,
+              105,
+              103,
+              104,
+              116,
+              156,
+              16,
+              91,
+              34,
+              66,
+              111,
+              116,
+              104,
+              32,
+              119,
+              111,
+              114,
+              107,
+              108,
+              111,
+              97,
+              100,
+              115,
+              32,
+              97,
+              114,
+              101,
+              32,
+              97,
+              99,
+              99,
+              101,
+              112,
+              116,
+              97,
+              98,
+              108,
+              101,
+              46,
+              32,
+              80,
+              114,
+              101,
+              102,
+              101,
+              114,
+              32,
+              116,
+              104,
+              101,
+              32,
+              67,
+              80,
+              85,
+              45,
+              104,
+              101,
+              97,
+              118,
+              121,
+              32,
+              66,
+              101,
+              116,
+              97,
+              32,
+              99,
+              111,
+              109,
+              112,
+              105,
+              108,
+              101,
+              114,
+              32,
+              119,
+              111,
+              114,
+              107,
+              108,
+              111,
+              97,
+              100,
+              32,
+              102,
+              105,
+              114,
+              115,
+              116,
+              44,
+              32,
+              116,
+              104,
+              101,
+              110,
+              32,
+              116,
+              104,
+              101,
+              32,
+              115,
+              109,
+              97,
+              108,
+              108,
+              32,
+              65,
+              108,
+              112,
+              104,
+              97,
+              32,
+              100,
+              111,
+              99,
+              117,
+              109,
+              101,
+              110,
+              116,
+              97,
+              116,
+              105,
+              111,
+              110,
+              32,
+              119,
+              111,
+              114,
+              107,
+              108,
+              111,
+              97,
+              100,
+              46,
+              34,
+              44,
+              34,
+              66,
+              111,
+              116,
+              104,
+              32,
+              119,
+              111,
+              114,
+              107,
+              108,
+              111,
+              97,
+              100,
+              115,
+              32,
+              97,
+              114,
+              101,
+              32,
+              97,
+              99,
+              99,
+              101,
+              112,
+              116,
+              97,
+              98,
+              108,
+              101,
+              46,
+              32,
+              80,
+              114,
+              101,
+              102,
+              101,
+              114,
+              32,
+              116,
+              104,
+              101,
+              32,
+              115,
+              109,
+              97,
+              108,
+              108,
+              32,
+              65,
+              108,
+              112,
+              104,
+              97,
+              32,
+              100,
+              111,
+              99,
+              117,
+              109,
+              101,
+              110,
+              116,
+              97,
+              116,
+              105,
+              111,
+              110,
+              32,
+              119,
+              111,
+              114,
+              107,
+              108,
+              111,
+              97,
+              100,
+              32,
+              102,
+              105,
+              114,
+              115,
+              116,
+              44,
+              32,
+              116,
+              104,
+              101,
+              110,
+              32,
+              116,
+              104,
+              101,
+              32,
+              67,
+              80,
+              85,
+              45,
+              104,
+              101,
+              97,
+              118,
+              121,
+              32,
+              66,
+              101,
+              116,
+              97,
+              32,
+              99,
+              111,
+              109,
+              112,
+              105,
+              108,
+              101,
+              114,
+              32,
+              119,
+              111,
+              114,
+              107,
+              108,
+              111,
+              97,
+              100,
+              46,
+              34,
+              93,
+              6,
+              109,
+              101,
+              116,
+              104,
+              111,
+              100,
+              132,
+              1,
+              115,
+              101,
+              97,
+              108,
+              95,
+              112,
+              114,
+              101,
+              102,
+              101,
+              114,
+              101,
+              110,
+              99,
+              101,
+              115
+            ],
+            "readable": "{\"args\":[\"0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab\",1,\"right\",\"[\\\"Both workloads are acceptable. Prefer the CPU-heavy Beta compiler workload first, then the small Alpha documentation workload.\\\",\\\"Both workloads are acceptable. Prefer the small Alpha documentation workload first, then the CPU-heavy Beta compiler workload.\\\"]\",]\"method\":\"seal_preferences\"}"
+          }
+        },
+        "leader_only": false,
+        "votes": {
+          "0x3720CfC92ACB431F215673A7b5F315B5efe1A4D6": "idle",
+          "0x8D9E52A3c9Ad95D2Be9987AD2C3919F5460DDc3e": "agree",
+          "0xbf44ED2c27E8Cc6b36FBF6890B8fDAD3b220cC88": "agree",
+          "0xc3Acc646761d7BC43a47ccEB1F60E7078B1d51Fc": "agree",
+          "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639": "agree"
+        },
+        "rounds": [
+          {
+            "round": "Accepted",
+            "leaders": [
+              {
+                "mode": "leader",
+                "vote": null,
+                "execution": "SUCCESS"
+              },
+              {
+                "mode": "validator",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              }
+            ],
+            "validators": [
+              {
+                "address": "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              },
+              {
+                "address": "0x3720CfC92ACB431F215673A7b5F315B5efe1A4D6",
+                "vote": "idle",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0x8D9E52A3c9Ad95D2Be9987AD2C3919F5460DDc3e",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              },
+              {
+                "address": "0xc3Acc646761d7BC43a47ccEB1F60E7078B1d51Fc",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "compile-uncertain-side",
+      "sender": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3",
+      "method": "compile_side",
+      "args": [
+        "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab",
+        2,
+        "left"
+      ],
+      "expected_error": null,
+      "hash": "0x2b07c10a184a563d8afdc6d28d66a962602dbb0c5b217aaff62d4abb08e04015",
+      "submitted_at": "2026-11-17T16:05:37.076Z",
+      "observed_status": "FINALIZED",
+      "receipt": {
+        "hash": "0x2b07c10a184a563d8afdc6d28d66a962602dbb0c5b217aaff62d4abb08e04015",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+        "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+        "data": {
+          "calldata": {
+            "base64": "FgRhcmdzHcQDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnVuY2VydGFpbi1sYWIRJGxlZnQGbWV0aG9kZGNvbXBpbGVfc2lkZQ==",
+            "raw": [
+              22,
+              4,
+              97,
+              114,
+              103,
+              115,
+              29,
+              196,
+              3,
+              48,
+              120,
+              48,
+              97,
+              57,
+              97,
+              97,
+              53,
+              57,
+              99,
+              57,
+              56,
+              98,
+              101,
+              98,
+              97,
+              99,
+              56,
+              101,
+              99,
+              54,
+              101,
+              48,
+              99,
+              97,
+              48,
+              50,
+              48,
+              57,
+              56,
+              54,
+              56,
+              101,
+              50,
+              98,
+              50,
+              51,
+              48,
+              49,
+              50,
+              99,
+              51,
+              58,
+              117,
+              110,
+              99,
+              101,
+              114,
+              116,
+              97,
+              105,
+              110,
+              45,
+              108,
+              97,
+              98,
+              17,
+              36,
+              108,
+              101,
+              102,
+              116,
+              6,
+              109,
+              101,
+              116,
+              104,
+              111,
+              100,
+              100,
+              99,
+              111,
+              109,
+              112,
+              105,
+              108,
+              101,
+              95,
+              115,
+              105,
+              100,
+              101
+            ],
+            "readable": "{\"args\":[\"0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab\",2,\"left\",]\"method\":\"compile_side\"}"
+          }
+        },
+        "leader_only": false,
+        "votes": {
+          "0x215c6BA80EdD9a47856D63E959A32AFE6B5Aa575": "agree",
+          "0x87DD12658711db28B41C1fBB516236088D214fAD": "idle",
+          "0x9e9A34d5C2E5B5f494a010a7dfA62eA54113645E": "agree",
+          "0xc0570E16E935531dee442333d199fCdA4Ba9e6f1": "idle",
+          "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639": "agree"
+        },
+        "rounds": [
+          {
+            "round": "Accepted",
+            "leaders": [
+              {
+                "mode": "leader",
+                "vote": null,
+                "execution": "SUCCESS"
+              },
+              {
+                "mode": "validator",
+                "vote": "idle",
+                "execution": "ERROR",
+                "error": "Validator execution cancelled after quorum"
+              }
+            ],
+            "validators": [
+              {
+                "address": "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              },
+              {
+                "address": "0x215c6BA80EdD9a47856D63E959A32AFE6B5Aa575",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              },
+              {
+                "address": "0x87DD12658711db28B41C1fBB516236088D214fAD",
+                "vote": "idle",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0x9e9A34d5C2E5B5f494a010a7dfA62eA54113645E",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "unknown-cannot-solve",
+      "sender": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3",
+      "method": "solve",
+      "args": [
+        "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab",
+        3
+      ],
+      "expected_error": "PREFERENCES_NOT_READY",
+      "hash": "0xc54f4564177a1342ad59895616531a41c95178a75dfebe6df216fd98a6a3c0e1",
+      "submitted_at": "2026-11-17T16:07:16.511Z",
+      "observed_status": "FINALIZED",
+      "receipt": {
+        "hash": "0xc54f4564177a1342ad59895616531a41c95178a75dfebe6df216fd98a6a3c0e1",
+        "status": "FINALIZED",
+        "execution": "ERROR",
+        "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+        "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+        "data": {
+          "calldata": {
+            "base64": "FgRhcmdzFcQDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnVuY2VydGFpbi1sYWIZBm1ldGhvZCxzb2x2ZQ==",
+            "raw": [
+              22,
+              4,
+              97,
+              114,
+              103,
+              115,
+              21,
+              196,
+              3,
+              48,
+              120,
+              48,
+              97,
+              57,
+              97,
+              97,
+              53,
+              57,
+              99,
+              57,
+              56,
+              98,
+              101,
+              98,
+              97,
+              99,
+              56,
+              101,
+              99,
+              54,
+              101,
+              48,
+              99,
+              97,
+              48,
+              50,
+              48,
+              57,
+              56,
+              54,
+              56,
+              101,
+              50,
+              98,
+              50,
+              51,
+              48,
+              49,
+              50,
+              99,
+              51,
+              58,
+              117,
+              110,
+              99,
+              101,
+              114,
+              116,
+              97,
+              105,
+              110,
+              45,
+              108,
+              97,
+              98,
+              25,
+              6,
+              109,
+              101,
+              116,
+              104,
+              111,
+              100,
+              44,
+              115,
+              111,
+              108,
+              118,
+              101
+            ],
+            "readable": "{\"args\":[\"0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab\",3,]\"method\":\"solve\"}"
+          }
+        },
+        "leader_only": false,
+        "votes": {
+          "0x215c6BA80EdD9a47856D63E959A32AFE6B5Aa575": "agree",
+          "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba": "agree",
+          "0x9e716966Fbc31a155250000CfC6C5E0aefbA9a95": "agree",
+          "0xAfA5B76d8c2b976097406893b59C499b5D92D878": "idle",
+          "0xE7a7f994107b733CcBe5d0a288FB37A9EB3A0687": "idle"
+        },
+        "rounds": [
+          {
+            "round": "Accepted",
+            "leaders": [
+              {
+                "mode": "leader",
+                "vote": null,
+                "execution": "ERROR",
+                "error": "Exception: PREFERENCES_NOT_READY"
+              },
+              {
+                "mode": "validator",
+                "vote": "agree",
+                "execution": "ERROR",
+                "error": "Exception: PREFERENCES_NOT_READY"
+              }
+            ],
+            "validators": [
+              {
+                "address": "0xE7a7f994107b733CcBe5d0a288FB37A9EB3A0687",
+                "vote": "idle",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba",
+                "vote": "agree",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0xAfA5B76d8c2b976097406893b59C499b5D92D878",
+                "vote": "idle",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0x9e716966Fbc31a155250000CfC6C5E0aefbA9a95",
+                "vote": "agree",
+                "execution": "ERROR"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "cancel-uncertain-market",
+      "sender": "0x9e6988226843dd5832b032c06caefcaab22d8c16",
+      "method": "cancel",
+      "args": [
+        "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab",
+        3
+      ],
+      "expected_error": null,
+      "hash": "0x7ebeef2d91ef59e9d9a529e6559bbd8bcff4b9c72c77af6c5dfad00c0dfe83ac",
+      "submitted_at": "2026-11-17T16:08:12.599Z",
+      "observed_status": "FINALIZED",
+      "receipt": {
+        "hash": "0x7ebeef2d91ef59e9d9a529e6559bbd8bcff4b9c72c77af6c5dfad00c0dfe83ac",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "from": "0x9E6988226843dD5832B032c06cAefCaAB22d8C16",
+        "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+        "data": {
+          "calldata": {
+            "base64": "FgRhcmdzFcQDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnVuY2VydGFpbi1sYWIZBm1ldGhvZDRjYW5jZWw=",
+            "raw": [
+              22,
+              4,
+              97,
+              114,
+              103,
+              115,
+              21,
+              196,
+              3,
+              48,
+              120,
+              48,
+              97,
+              57,
+              97,
+              97,
+              53,
+              57,
+              99,
+              57,
+              56,
+              98,
+              101,
+              98,
+              97,
+              99,
+              56,
+              101,
+              99,
+              54,
+              101,
+              48,
+              99,
+              97,
+              48,
+              50,
+              48,
+              57,
+              56,
+              54,
+              56,
+              101,
+              50,
+              98,
+              50,
+              51,
+              48,
+              49,
+              50,
+              99,
+              51,
+              58,
+              117,
+              110,
+              99,
+              101,
+              114,
+              116,
+              97,
+              105,
+              110,
+              45,
+              108,
+              97,
+              98,
+              25,
+              6,
+              109,
+              101,
+              116,
+              104,
+              111,
+              100,
+              52,
+              99,
+              97,
+              110,
+              99,
+              101,
+              108
+            ],
+            "readable": "{\"args\":[\"0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab\",3,]\"method\":\"cancel\"}"
+          }
+        },
+        "leader_only": false,
+        "votes": {
+          "0x5Bf68b9b661C86D6083B2F67faf19fF649a8a203": "agree",
+          "0x87DD12658711db28B41C1fBB516236088D214fAD": "agree",
+          "0x8D9E52A3c9Ad95D2Be9987AD2C3919F5460DDc3e": "idle",
+          "0x91d3032d39177dD187665b345954fA5809D8a574": "idle",
+          "0xD40f99BB049b50311f7d0C4E76fAd47bD12C9774": "agree"
+        },
+        "rounds": [
+          {
+            "round": "Accepted",
+            "leaders": [
+              {
+                "mode": "leader",
+                "vote": null,
+                "execution": "SUCCESS"
+              },
+              {
+                "mode": "validator",
+                "vote": "idle",
+                "execution": "ERROR",
+                "error": "Validator execution cancelled after quorum"
+              }
+            ],
+            "validators": [
+              {
+                "address": "0x5Bf68b9b661C86D6083B2F67faf19fF649a8a203",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              },
+              {
+                "address": "0xD40f99BB049b50311f7d0C4E76fAd47bD12C9774",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              },
+              {
+                "address": "0x91d3032d39177dD187665b345954fA5809D8a574",
+                "vote": "idle",
+                "execution": "ERROR"
+              },
+              {
+                "address": "0x87DD12658711db28B41C1fBB516236088D214fAD",
+                "vote": "agree",
+                "execution": "SUCCESS"
+              }
+            ]
+          }
+        ]
+      }
     }
   ],
   "snapshots": {
@@ -3731,9 +6084,532 @@
           "Both workloads are acceptable. Prefer the small Alpha documentation workload first, then the CPU-heavy Beta compiler workload."
         ]
       }
+    },
+    "committed": {
+      "approvals": [
+        "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3",
+        "0x9e6988226843dd5832b032c06caefcaab22d8c16"
+      ],
+      "certificate": {
+        "checked": 7,
+        "forced_pairs": [],
+        "left_ranks": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "matchings": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "rejected": [
+          {
+            "assignment": [
+              -1,
+              -1
+            ],
+            "blocking_pair": [
+              0,
+              0
+            ]
+          },
+          {
+            "assignment": [
+              -1,
+              0
+            ],
+            "blocking_pair": [
+              0,
+              1
+            ]
+          },
+          {
+            "assignment": [
+              -1,
+              1
+            ],
+            "blocking_pair": [
+              0,
+              0
+            ]
+          },
+          {
+            "assignment": [
+              0,
+              -1
+            ],
+            "blocking_pair": [
+              1,
+              1
+            ]
+          },
+          {
+            "assignment": [
+              1,
+              -1
+            ],
+            "blocking_pair": [
+              0,
+              0
+            ]
+          }
+        ],
+        "right_ranks": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "certificate_hash": "04ae3a3b227194ea1a7bb0eea73cad1e9a013f7998bce0d65856934ffa897407",
+      "compiled": {
+        "left": {
+          "rows": [
+            {
+              "excluded": [],
+              "quote": "Both benches are acceptable. Prefer the low-noise Quiet bench first, then the high-speed Fast bench.",
+              "ranked": [
+                "bench-quiet",
+                "bench-fast"
+              ],
+              "status": "KNOWN"
+            },
+            {
+              "excluded": [],
+              "quote": "Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench.",
+              "ranked": [
+                "bench-fast",
+                "bench-quiet"
+              ],
+              "status": "KNOWN"
+            }
+          ]
+        },
+        "right": {
+          "rows": [
+            {
+              "excluded": [],
+              "quote": "Both workloads are acceptable. Prefer the CPU-heavy Beta compiler workload first, then the small Alpha documentation workload.",
+              "ranked": [
+                "job-beta",
+                "job-alpha"
+              ],
+              "status": "KNOWN"
+            },
+            {
+              "excluded": [],
+              "quote": "Both workloads are acceptable. Prefer the small Alpha documentation workload first, then the CPU-heavy Beta compiler workload.",
+              "ranked": [
+                "job-alpha",
+                "job-beta"
+              ],
+              "status": "KNOWN"
+            }
+          ]
+        }
+      },
+      "id": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:stable-lab",
+      "owners": {
+        "left": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3",
+        "right": "0x9e6988226843dd5832b032c06caefcaab22d8c16"
+      },
+      "revision": 8,
+      "roster": {
+        "left": [
+          {
+            "description": "Alpha: a small documentation test workload.",
+            "id": "job-alpha"
+          },
+          {
+            "description": "Beta: a CPU-heavy compiler test workload.",
+            "id": "job-beta"
+          }
+        ],
+        "right": [
+          {
+            "description": "Quiet: a low-noise test bench.",
+            "id": "bench-quiet"
+          },
+          {
+            "description": "Fast: a high-speed test bench.",
+            "id": "bench-fast"
+          }
+        ]
+      },
+      "roster_hash": "7c056191383abfb2ed4664b1bbc0c7145a50964023605de5f0a8e66d45a19b1a",
+      "selection": {
+        "assignment": [
+          0,
+          1
+        ],
+        "digest": "ad18e3ac1b8871636dac8049d5fb96a886b86825bf07f0857cce845b53da7cc8",
+        "index": 0
+      },
+      "state": "COMMITTED",
+      "statements": {
+        "left": [
+          "Both benches are acceptable. Prefer the low-noise Quiet bench first, then the high-speed Fast bench.",
+          "Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench."
+        ],
+        "right": [
+          "Both workloads are acceptable. Prefer the CPU-heavy Beta compiler workload first, then the small Alpha documentation workload.",
+          "Both workloads are acceptable. Prefer the small Alpha documentation workload first, then the CPU-heavy Beta compiler workload."
+        ]
+      }
+    },
+    "uncertain": {
+      "approvals": [],
+      "certificate": null,
+      "certificate_hash": "",
+      "compiled": {
+        "left": {
+          "rows": [
+            {
+              "excluded": [],
+              "quote": "Choose whatever is appropriate; I have not specified any ordering or acceptability of these benches.",
+              "ranked": [],
+              "status": "UNKNOWN"
+            },
+            {
+              "excluded": [],
+              "quote": "Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench.",
+              "ranked": [
+                "bench-fast",
+                "bench-quiet"
+              ],
+              "status": "KNOWN"
+            }
+          ]
+        }
+      },
+      "id": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab",
+      "owners": {
+        "left": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3",
+        "right": "0x9e6988226843dd5832b032c06caefcaab22d8c16"
+      },
+      "revision": 3,
+      "roster": {
+        "left": [
+          {
+            "description": "Alpha: a small documentation test workload.",
+            "id": "job-alpha"
+          },
+          {
+            "description": "Beta: a CPU-heavy compiler test workload.",
+            "id": "job-beta"
+          }
+        ],
+        "right": [
+          {
+            "description": "Quiet: a low-noise test bench.",
+            "id": "bench-quiet"
+          },
+          {
+            "description": "Fast: a high-speed test bench.",
+            "id": "bench-fast"
+          }
+        ]
+      },
+      "roster_hash": "ff7dc94cb56c769ab9c61eb6f5e1b678315d7459b36a7a53d4d012e6c7487c9e",
+      "selection": null,
+      "state": "NEEDS_CLARIFICATION",
+      "statements": {
+        "left": [
+          "Choose whatever is appropriate; I have not specified any ordering or acceptability of these benches.",
+          "Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench."
+        ],
+        "right": [
+          "Both workloads are acceptable. Prefer the CPU-heavy Beta compiler workload first, then the small Alpha documentation workload.",
+          "Both workloads are acceptable. Prefer the small Alpha documentation workload first, then the CPU-heavy Beta compiler workload."
+        ]
+      }
     }
   },
   "started_at": "2026-11-17T14:53:52.099Z",
   "funded": true,
-  "contract": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183"
+  "contract": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+  "final_reads": [
+    {
+      "method": "get_market",
+      "args": [
+        "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:stable-lab"
+      ],
+      "value": {
+        "approvals": [
+          "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3",
+          "0x9e6988226843dd5832b032c06caefcaab22d8c16"
+        ],
+        "certificate": {
+          "checked": 7,
+          "forced_pairs": [],
+          "left_ranks": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "matchings": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "rejected": [
+            {
+              "assignment": [
+                -1,
+                -1
+              ],
+              "blocking_pair": [
+                0,
+                0
+              ]
+            },
+            {
+              "assignment": [
+                -1,
+                0
+              ],
+              "blocking_pair": [
+                0,
+                1
+              ]
+            },
+            {
+              "assignment": [
+                -1,
+                1
+              ],
+              "blocking_pair": [
+                0,
+                0
+              ]
+            },
+            {
+              "assignment": [
+                0,
+                -1
+              ],
+              "blocking_pair": [
+                1,
+                1
+              ]
+            },
+            {
+              "assignment": [
+                1,
+                -1
+              ],
+              "blocking_pair": [
+                0,
+                0
+              ]
+            }
+          ],
+          "right_ranks": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "certificate_hash": "04ae3a3b227194ea1a7bb0eea73cad1e9a013f7998bce0d65856934ffa897407",
+        "compiled": {
+          "left": {
+            "rows": [
+              {
+                "excluded": [],
+                "quote": "Both benches are acceptable. Prefer the low-noise Quiet bench first, then the high-speed Fast bench.",
+                "ranked": [
+                  "bench-quiet",
+                  "bench-fast"
+                ],
+                "status": "KNOWN"
+              },
+              {
+                "excluded": [],
+                "quote": "Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench.",
+                "ranked": [
+                  "bench-fast",
+                  "bench-quiet"
+                ],
+                "status": "KNOWN"
+              }
+            ]
+          },
+          "right": {
+            "rows": [
+              {
+                "excluded": [],
+                "quote": "Both workloads are acceptable. Prefer the CPU-heavy Beta compiler workload first, then the small Alpha documentation workload.",
+                "ranked": [
+                  "job-beta",
+                  "job-alpha"
+                ],
+                "status": "KNOWN"
+              },
+              {
+                "excluded": [],
+                "quote": "Both workloads are acceptable. Prefer the small Alpha documentation workload first, then the CPU-heavy Beta compiler workload.",
+                "ranked": [
+                  "job-alpha",
+                  "job-beta"
+                ],
+                "status": "KNOWN"
+              }
+            ]
+          }
+        },
+        "id": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:stable-lab",
+        "owners": {
+          "left": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3",
+          "right": "0x9e6988226843dd5832b032c06caefcaab22d8c16"
+        },
+        "revision": 8,
+        "roster": {
+          "left": [
+            {
+              "description": "Alpha: a small documentation test workload.",
+              "id": "job-alpha"
+            },
+            {
+              "description": "Beta: a CPU-heavy compiler test workload.",
+              "id": "job-beta"
+            }
+          ],
+          "right": [
+            {
+              "description": "Quiet: a low-noise test bench.",
+              "id": "bench-quiet"
+            },
+            {
+              "description": "Fast: a high-speed test bench.",
+              "id": "bench-fast"
+            }
+          ]
+        },
+        "roster_hash": "7c056191383abfb2ed4664b1bbc0c7145a50964023605de5f0a8e66d45a19b1a",
+        "selection": {
+          "assignment": [
+            0,
+            1
+          ],
+          "digest": "ad18e3ac1b8871636dac8049d5fb96a886b86825bf07f0857cce845b53da7cc8",
+          "index": 0
+        },
+        "state": "COMMITTED",
+        "statements": {
+          "left": [
+            "Both benches are acceptable. Prefer the low-noise Quiet bench first, then the high-speed Fast bench.",
+            "Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench."
+          ],
+          "right": [
+            "Both workloads are acceptable. Prefer the CPU-heavy Beta compiler workload first, then the small Alpha documentation workload.",
+            "Both workloads are acceptable. Prefer the small Alpha documentation workload first, then the CPU-heavy Beta compiler workload."
+          ]
+        }
+      }
+    },
+    {
+      "method": "get_market",
+      "args": [
+        "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab"
+      ],
+      "value": {
+        "approvals": [],
+        "certificate": null,
+        "certificate_hash": "",
+        "compiled": {
+          "left": {
+            "rows": [
+              {
+                "excluded": [],
+                "quote": "Choose whatever is appropriate; I have not specified any ordering or acceptability of these benches.",
+                "ranked": [],
+                "status": "UNKNOWN"
+              },
+              {
+                "excluded": [],
+                "quote": "Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench.",
+                "ranked": [
+                  "bench-fast",
+                  "bench-quiet"
+                ],
+                "status": "KNOWN"
+              }
+            ]
+          }
+        },
+        "id": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab",
+        "owners": {
+          "left": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3",
+          "right": "0x9e6988226843dd5832b032c06caefcaab22d8c16"
+        },
+        "revision": 4,
+        "roster": {
+          "left": [
+            {
+              "description": "Alpha: a small documentation test workload.",
+              "id": "job-alpha"
+            },
+            {
+              "description": "Beta: a CPU-heavy compiler test workload.",
+              "id": "job-beta"
+            }
+          ],
+          "right": [
+            {
+              "description": "Quiet: a low-noise test bench.",
+              "id": "bench-quiet"
+            },
+            {
+              "description": "Fast: a high-speed test bench.",
+              "id": "bench-fast"
+            }
+          ]
+        },
+        "roster_hash": "ff7dc94cb56c769ab9c61eb6f5e1b678315d7459b36a7a53d4d012e6c7487c9e",
+        "selection": null,
+        "state": "CANCELLED",
+        "statements": {
+          "left": [
+            "Choose whatever is appropriate; I have not specified any ordering or acceptability of these benches.",
+            "Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench."
+          ],
+          "right": [
+            "Both workloads are acceptable. Prefer the CPU-heavy Beta compiler workload first, then the small Alpha documentation workload.",
+            "Both workloads are acceptable. Prefer the small Alpha documentation workload first, then the CPU-heavy Beta compiler workload."
+          ]
+        }
+      }
+    }
+  ],
+  "completed_at": "2026-11-17T16:09:02.598Z"
 }

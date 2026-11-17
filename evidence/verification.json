@@ -1,0 +1,1666 @@
+{
+  "protocol": {
+    "chain_id": 61999,
+    "max_pairs": 4,
+    "value_transfers": false,
+    "version": "stablebench-1"
+  },
+  "verified_at": "2026-11-17T16:12:59.092Z",
+  "chain_id": 61999,
+  "contract": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+  "source_sha256": "9cb6018582f9dc947ffbc4b5f77ce4b75b966a2c3957a4b885006e3f7511e309",
+  "transactions": [
+    {
+      "label": "deployment",
+      "expected_error": null,
+      "hash": "0x2f510cc23b81f7e50c92364cde83d991a917fa0794d669a542981ca0b04159ad",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "contract_address": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+        "calldata": {
+          "base64": "Bg=="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x0100CC442727eb2C438976aBD70DBfcC82453076": "agree",
+        "0x3bB85aC4690c9B73Fa72AD4dc3Ad0369814eE75E": "idle",
+        "0x49721Dd9d68016Df9ecf7821bfde3a628Fd11b74": "agree",
+        "0xAf1850e06967A7783E376Dd18EA5e76Cb8F09C2D": "agree",
+        "0xB791F36551F644f0B5E871BE6eCc721E3eCcF107": "idle"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0xAf1850e06967A7783E376Dd18EA5e76Cb8F09C2D",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0xB791F36551F644f0B5E871BE6eCc721E3eCcF107",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x49721Dd9d68016Df9ecf7821bfde3a628Fd11b74",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x3bB85aC4690c9B73Fa72AD4dc3Ad0369814eE75E",
+              "vote": "idle",
+              "execution": "ERROR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "create-market",
+      "expected_error": null,
+      "hash": "0x3956264175d6b55d029d86398995459f8912551600b05c87d1f9714221e07dc9",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzHVRzdGFibGUtbGFi1AIweDllNjk4ODIyNjg0M2RkNTgzMmIwMzJjMDZjYWVmY2FhYjIyZDhjMTa0E3sibGVmdCI6W3siaWQiOiJqb2ItYWxwaGEiLCJkZXNjcmlwdGlvbiI6IkFscGhhOiBhIHNtYWxsIGRvY3VtZW50YXRpb24gdGVzdCB3b3JrbG9hZC4ifSx7ImlkIjoiam9iLWJldGEiLCJkZXNjcmlwdGlvbiI6IkJldGE6IGEgQ1BVLWhlYXZ5IGNvbXBpbGVyIHRlc3Qgd29ya2xvYWQuIn1dLCJyaWdodCI6W3siaWQiOiJiZW5jaC1xdWlldCIsImRlc2NyaXB0aW9uIjoiUXVpZXQ6IGEgbG93LW5vaXNlIHRlc3QgYmVuY2guIn0seyJpZCI6ImJlbmNoLWZhc3QiLCJkZXNjcmlwdGlvbiI6IkZhc3Q6IGEgaGlnaC1zcGVlZCB0ZXN0IGJlbmNoLiJ9XX0GbWV0aG9kbGNyZWF0ZV9tYXJrZXQ="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x385Cb9a8572A6323030a50Be21B11E8f0873B468": "idle",
+        "0x44Ee241dA0BaA8F7F0E05949Dd32CF096460E8c5": "agree",
+        "0x5E6119cB239a2AaBdF860BfA32efF9d4540B4A81": "agree",
+        "0xB791F36551F644f0B5E871BE6eCc721E3eCcF107": "idle",
+        "0xF81A2958A8f61e47fcfDdF7e9Ce94e400Ce91DcA": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0xF81A2958A8f61e47fcfDdF7e9Ce94e400Ce91DcA",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x385Cb9a8572A6323030a50Be21B11E8f0873B468",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0xB791F36551F644f0B5E871BE6eCc721E3eCcF107",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x44Ee241dA0BaA8F7F0E05949Dd32CF096460E8c5",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "outsider-cannot-seal",
+      "expected_error": "SIDE_OWNER_ONLY",
+      "hash": "0x7e0045e8950bf3cb357959340e0c885f026c662a23203bff4f669f4382804c9b",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "from": "0xbd975E6180EDAA3ae4431b73c44e7947C2f300b4",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzJawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWIBJGxlZnT8DFsiQm90aCBiZW5jaGVzIGFyZSBhY2NlcHRhYmxlLiBQcmVmZXIgdGhlIGxvdy1ub2lzZSBRdWlldCBiZW5jaCBmaXJzdCwgdGhlbiB0aGUgaGlnaC1zcGVlZCBGYXN0IGJlbmNoLiIsIkJvdGggYmVuY2hlcyBhcmUgYWNjZXB0YWJsZS4gUHJlZmVyIHRoZSBoaWdoLXNwZWVkIEZhc3QgYmVuY2ggZmlyc3QsIHRoZW4gdGhlIGxvdy1ub2lzZSBRdWlldCBiZW5jaC4iXQZtZXRob2SEAXNlYWxfcHJlZmVyZW5jZXM="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x0100CC442727eb2C438976aBD70DBfcC82453076": "agree",
+        "0x34B5C1168A6C8F2E5DfF1F06ad68f7F20f346392": "agree",
+        "0x38AC0d0B6E031225a6BA218dC6FC258675A10B75": "agree",
+        "0x44Ee241dA0BaA8F7F0E05949Dd32CF096460E8c5": "idle",
+        "0xF81A2958A8f61e47fcfDdF7e9Ce94e400Ce91DcA": "idle"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "ERROR",
+              "error": "Exception: SIDE_OWNER_ONLY"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "ERROR",
+              "error": "Exception: SIDE_OWNER_ONLY"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0x0100CC442727eb2C438976aBD70DBfcC82453076",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x44Ee241dA0BaA8F7F0E05949Dd32CF096460E8c5",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x38AC0d0B6E031225a6BA218dC6FC258675A10B75",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0xF81A2958A8f61e47fcfDdF7e9Ce94e400Ce91DcA",
+              "vote": "idle",
+              "execution": "ERROR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "seal-left",
+      "expected_error": null,
+      "hash": "0xa5bb17943e81973ed24c58f80bb2f53f312694a6e3c4b24befc635ff9494001c",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzJawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWIBJGxlZnT8DFsiQm90aCBiZW5jaGVzIGFyZSBhY2NlcHRhYmxlLiBQcmVmZXIgdGhlIGxvdy1ub2lzZSBRdWlldCBiZW5jaCBmaXJzdCwgdGhlbiB0aGUgaGlnaC1zcGVlZCBGYXN0IGJlbmNoLiIsIkJvdGggYmVuY2hlcyBhcmUgYWNjZXB0YWJsZS4gUHJlZmVyIHRoZSBoaWdoLXNwZWVkIEZhc3QgYmVuY2ggZmlyc3QsIHRoZW4gdGhlIGxvdy1ub2lzZSBRdWlldCBiZW5jaC4iXQZtZXRob2SEAXNlYWxfcHJlZmVyZW5jZXM="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x0100CC442727eb2C438976aBD70DBfcC82453076": "idle",
+        "0x38AC0d0B6E031225a6BA218dC6FC258675A10B75": "agree",
+        "0x41344dA9edd81Da864816d80148E2865fed06461": "agree",
+        "0x43BF16419a6A45A8B5283f0913c14105Db5FdeD8": "agree",
+        "0xA1Df1C2CA911d132Bc98D30e9c6e9908319b2d52": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0x38AC0d0B6E031225a6BA218dC6FC258675A10B75",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x43BF16419a6A45A8B5283f0913c14105Db5FdeD8",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0xA1Df1C2CA911d132Bc98D30e9c6e9908319b2d52",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x0100CC442727eb2C438976aBD70DBfcC82453076",
+              "vote": "idle",
+              "execution": "ERROR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "seal-right",
+      "expected_error": null,
+      "hash": "0x071574cec1f44b2fdf4c1208c36e4441065f0896dcf43165684e020bdd686a74",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x9E6988226843dD5832B032c06cAefCaAB22d8C16",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzJawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWIJLHJpZ2h0nBBbIkJvdGggd29ya2xvYWRzIGFyZSBhY2NlcHRhYmxlLiBQcmVmZXIgdGhlIENQVS1oZWF2eSBCZXRhIGNvbXBpbGVyIHdvcmtsb2FkIGZpcnN0LCB0aGVuIHRoZSBzbWFsbCBBbHBoYSBkb2N1bWVudGF0aW9uIHdvcmtsb2FkLiIsIkJvdGggd29ya2xvYWRzIGFyZSBhY2NlcHRhYmxlLiBQcmVmZXIgdGhlIHNtYWxsIEFscGhhIGRvY3VtZW50YXRpb24gd29ya2xvYWQgZmlyc3QsIHRoZW4gdGhlIENQVS1oZWF2eSBCZXRhIGNvbXBpbGVyIHdvcmtsb2FkLiJdBm1ldGhvZIQBc2VhbF9wcmVmZXJlbmNlcw=="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x38AC0d0B6E031225a6BA218dC6FC258675A10B75": "agree",
+        "0x43BF16419a6A45A8B5283f0913c14105Db5FdeD8": "agree",
+        "0x5E6119cB239a2AaBdF860BfA32efF9d4540B4A81": "agree",
+        "0xEa48eef8ded38e7b30A68FaE67F4F98b65AAb6bF": "agree",
+        "0xe78b7891b95D5a12Fa086cbCe79531DB18e999Af": "idle"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0xEa48eef8ded38e7b30A68FaE67F4F98b65AAb6bF",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x5E6119cB239a2AaBdF860BfA32efF9d4540B4A81",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x38AC0d0B6E031225a6BA218dC6FC258675A10B75",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0xe78b7891b95D5a12Fa086cbCe79531DB18e999Af",
+              "vote": "idle",
+              "execution": "ERROR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cannot-solve-uncompiled",
+      "expected_error": "PREFERENCES_NOT_READY",
+      "hash": "0xb03c2d54d42c69878a6dab3291d87644daba6241e980737bd0a06ed70f9f388b",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzFawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWIRBm1ldGhvZCxzb2x2ZQ=="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x34B5C1168A6C8F2E5DfF1F06ad68f7F20f346392": "agree",
+        "0x38AC0d0B6E031225a6BA218dC6FC258675A10B75": "agree",
+        "0x41344dA9edd81Da864816d80148E2865fed06461": "idle",
+        "0x4C68a7B3987f589165684A28CBc52fce7a53c0cD": "agree",
+        "0xF81A2958A8f61e47fcfDdF7e9Ce94e400Ce91DcA": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "ERROR",
+              "error": "Exception: PREFERENCES_NOT_READY"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "ERROR",
+              "error": "Exception: PREFERENCES_NOT_READY"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0xF81A2958A8f61e47fcfDdF7e9Ce94e400Ce91DcA",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x34B5C1168A6C8F2E5DfF1F06ad68f7F20f346392",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x38AC0d0B6E031225a6BA218dC6FC258675A10B75",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x41344dA9edd81Da864816d80148E2865fed06461",
+              "vote": "idle",
+              "execution": "ERROR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "compile-left",
+      "expected_error": null,
+      "hash": "0x0c73e8835d6dcc3c351658c1332b2b35b1baf046b53d01ef4f5fb9fb5a506a55",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzHawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWIRJGxlZnQGbWV0aG9kZGNvbXBpbGVfc2lkZQ=="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x3bB85aC4690c9B73Fa72AD4dc3Ad0369814eE75E": "idle",
+        "0x5E6119cB239a2AaBdF860BfA32efF9d4540B4A81": "agree",
+        "0xA1Df1C2CA911d132Bc98D30e9c6e9908319b2d52": "agree",
+        "0xAf1850e06967A7783E376Dd18EA5e76Cb8F09C2D": "idle",
+        "0xF81A2958A8f61e47fcfDdF7e9Ce94e400Ce91DcA": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0xF81A2958A8f61e47fcfDdF7e9Ce94e400Ce91DcA",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0xAf1850e06967A7783E376Dd18EA5e76Cb8F09C2D",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x5E6119cB239a2AaBdF860BfA32efF9d4540B4A81",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x3bB85aC4690c9B73Fa72AD4dc3Ad0369814eE75E",
+              "vote": "idle",
+              "execution": "ERROR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "compile-right",
+      "expected_error": null,
+      "hash": "0x15d1aa889692513a770f1b47de9b289dd15eb47eb60b1fd4b62c975df1cca6e8",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzHawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWIZLHJpZ2h0Bm1ldGhvZGRjb21waWxlX3NpZGU="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x3bB85aC4690c9B73Fa72AD4dc3Ad0369814eE75E": "idle",
+        "0x44Ee241dA0BaA8F7F0E05949Dd32CF096460E8c5": "agree",
+        "0x5B42f064623C4EaB08a2a657708BBC79d58562e6": "idle",
+        "0x5E6119cB239a2AaBdF860BfA32efF9d4540B4A81": "agree",
+        "0xB791F36551F644f0B5E871BE6eCc721E3eCcF107": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0x5B42f064623C4EaB08a2a657708BBC79d58562e6",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x3bB85aC4690c9B73Fa72AD4dc3Ad0369814eE75E",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x5E6119cB239a2AaBdF860BfA32efF9d4540B4A81",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0xB791F36551F644f0B5E871BE6eCc721E3eCcF107",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "solve-all-matchings",
+      "expected_error": null,
+      "hash": "0xa51496891f27abc52b14590ebeb4a635ff378167f082733ef201936ccd9ccae3",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzFawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWIhBm1ldGhvZCxzb2x2ZQ=="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x38AC0d0B6E031225a6BA218dC6FC258675A10B75": "agree",
+        "0x3bB85aC4690c9B73Fa72AD4dc3Ad0369814eE75E": "agree",
+        "0x43BF16419a6A45A8B5283f0913c14105Db5FdeD8": "idle",
+        "0x5B42f064623C4EaB08a2a657708BBC79d58562e6": "idle",
+        "0xe78b7891b95D5a12Fa086cbCe79531DB18e999Af": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0x5B42f064623C4EaB08a2a657708BBC79d58562e6",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x38AC0d0B6E031225a6BA218dC6FC258675A10B75",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x43BF16419a6A45A8B5283f0913c14105Db5FdeD8",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0xe78b7891b95D5a12Fa086cbCe79531DB18e999Af",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "select-assignment",
+      "expected_error": null,
+      "hash": "0xb1192ccadcf32828ba88413817591ee55727a611336b2164397cdd93ab1d376c",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzJawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWIpAYQEMDRhZTNhM2IyMjcxOTRlYTFhN2JiMGVlYTczY2FkMWU5YTAxM2Y3OTk4YmNlMGQ2NTg1NjkzNGZmYTg5NzQwNwZtZXRob2Q0c2VsZWN0"
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x0100CC442727eb2C438976aBD70DBfcC82453076": "agree",
+        "0x194dd3FC6F1c42bDA6a0Ca469Ba43D83DF927369": "agree",
+        "0xB791F36551F644f0B5E871BE6eCc721E3eCcF107": "agree",
+        "0xF81A2958A8f61e47fcfDdF7e9Ce94e400Ce91DcA": "idle",
+        "0xe78b7891b95D5a12Fa086cbCe79531DB18e999Af": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0xF81A2958A8f61e47fcfDdF7e9Ce94e400Ce91DcA",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0xe78b7891b95D5a12Fa086cbCe79531DB18e999Af",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x194dd3FC6F1c42bDA6a0Ca469Ba43D83DF927369",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x0100CC442727eb2C438976aBD70DBfcC82453076",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "reject-wrong-selection-digest",
+      "expected_error": "SELECTION_BINDING",
+      "hash": "0x525c23241b993afb1e0b79b71ccd5f104f5ba74ad5df48568ac2feed0b4e5c49",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "from": "0x9E6988226843dD5832B032c06cAefCaAB22d8C16",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzHawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWIxhAQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwBm1ldGhvZDxhcHByb3Zl"
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x5Bf68b9b661C86D6083B2F67faf19fF649a8a203": "agree",
+        "0x8D9E52A3c9Ad95D2Be9987AD2C3919F5460DDc3e": "agree",
+        "0xAfA5B76d8c2b976097406893b59C499b5D92D878": "agree",
+        "0xbf44ED2c27E8Cc6b36FBF6890B8fDAD3b220cC88": "idle",
+        "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639": "idle"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "ERROR",
+              "error": "Exception: SELECTION_BINDING"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "ERROR",
+              "error": "Exception: SELECTION_BINDING"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0x8D9E52A3c9Ad95D2Be9987AD2C3919F5460DDc3e",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0xbf44ED2c27E8Cc6b36FBF6890B8fDAD3b220cC88",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0xAfA5B76d8c2b976097406893b59C499b5D92D878",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639",
+              "vote": "idle",
+              "execution": "ERROR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "left-approval",
+      "expected_error": null,
+      "hash": "0x9983f44525323cac211ddb58b256b0127ecd8af0a4c67844287214a426dc44c7",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzHawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWIxhARhZDE4ZTNhYzFiODg3MTYzNmRhYzgwNDlkNWZiOTZhODg2Yjg2ODI1YmYwN2YwODU3Y2NlODQ1YjUzZGE3Y2M4Bm1ldGhvZDxhcHByb3Zl"
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x5Bf68b9b661C86D6083B2F67faf19fF649a8a203": "agree",
+        "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba": "agree",
+        "0x91d3032d39177dD187665b345954fA5809D8a574": "agree",
+        "0xA30E6a2fE63F257F942AcA6bFA7547c46EbebF0F": "agree",
+        "0xD40f99BB049b50311f7d0C4E76fAd47bD12C9774": "idle"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0xA30E6a2fE63F257F942AcA6bFA7547c46EbebF0F",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x91d3032d39177dD187665b345954fA5809D8a574",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0xD40f99BB049b50311f7d0C4E76fAd47bD12C9774",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x5Bf68b9b661C86D6083B2F67faf19fF649a8a203",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "reject-duplicate-approval",
+      "expected_error": "ALREADY_APPROVED",
+      "hash": "0x97c6dd9c512a8d69c4f5701b6af32a3d3bbad5e7831e2d7881fa220fc2d92f80",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzHawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWI5hARhZDE4ZTNhYzFiODg3MTYzNmRhYzgwNDlkNWZiOTZhODg2Yjg2ODI1YmYwN2YwODU3Y2NlODQ1YjUzZGE3Y2M4Bm1ldGhvZDxhcHByb3Zl"
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x3720CfC92ACB431F215673A7b5F315B5efe1A4D6": "idle",
+        "0x72fA271Aa4511062C08fB3Fc3696e34593bB59AA": "agree",
+        "0x8D9E52A3c9Ad95D2Be9987AD2C3919F5460DDc3e": "agree",
+        "0x91d3032d39177dD187665b345954fA5809D8a574": "agree",
+        "0xA30E6a2fE63F257F942AcA6bFA7547c46EbebF0F": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "ERROR",
+              "error": "Exception: ALREADY_APPROVED"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "ERROR",
+              "error": "Exception: ALREADY_APPROVED"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0x72fA271Aa4511062C08fB3Fc3696e34593bB59AA",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x8D9E52A3c9Ad95D2Be9987AD2C3919F5460DDc3e",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x91d3032d39177dD187665b345954fA5809D8a574",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x3720CfC92ACB431F215673A7b5F315B5efe1A4D6",
+              "vote": "idle",
+              "execution": "ERROR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "right-approval",
+      "expected_error": null,
+      "hash": "0xe8650d4fdc8a1a072e3597b48d6bf69b5f2c6851e76e9daa2020b90d989ee891",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x9E6988226843dD5832B032c06cAefCaAB22d8C16",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzHawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWI5hARhZDE4ZTNhYzFiODg3MTYzNmRhYzgwNDlkNWZiOTZhODg2Yjg2ODI1YmYwN2YwODU3Y2NlODQ1YjUzZGE3Y2M4Bm1ldGhvZDxhcHByb3Zl"
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x29A864a96A51c4e816ef65E95f18F0dfF2165569": "idle",
+        "0x5Bf68b9b661C86D6083B2F67faf19fF649a8a203": "agree",
+        "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba": "agree",
+        "0x91d3032d39177dD187665b345954fA5809D8a574": "agree",
+        "0x9e716966Fbc31a155250000CfC6C5E0aefbA9a95": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0x5Bf68b9b661C86D6083B2F67faf19fF649a8a203",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x29A864a96A51c4e816ef65E95f18F0dfF2165569",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x91d3032d39177dD187665b345954fA5809D8a574",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "reject-committed-replay",
+      "expected_error": "SELECTION_NOT_PENDING",
+      "hash": "0xeed9bcde7d3556ed654e8241916698ec0f1bd683f1955454e99581065cd0fa86",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "from": "0x9E6988226843dD5832B032c06cAefCaAB22d8C16",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzHawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWJBhARhZDE4ZTNhYzFiODg3MTYzNmRhYzgwNDlkNWZiOTZhODg2Yjg2ODI1YmYwN2YwODU3Y2NlODQ1YjUzZGE3Y2M4Bm1ldGhvZDxhcHByb3Zl"
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x3720CfC92ACB431F215673A7b5F315B5efe1A4D6": "agree",
+        "0x87DD12658711db28B41C1fBB516236088D214fAD": "idle",
+        "0x91d3032d39177dD187665b345954fA5809D8a574": "idle",
+        "0xc3Acc646761d7BC43a47ccEB1F60E7078B1d51Fc": "agree",
+        "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "ERROR",
+              "error": "Exception: SELECTION_NOT_PENDING"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "ERROR",
+              "error": "Exception: SELECTION_NOT_PENDING"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0x3720CfC92ACB431F215673A7b5F315B5efe1A4D6",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x87DD12658711db28B41C1fBB516236088D214fAD",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x91d3032d39177dD187665b345954fA5809D8a574",
+              "vote": "idle",
+              "execution": "ERROR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "reject-stale-cancellation",
+      "expected_error": "STALE_REVISION",
+      "hash": "0x5551b90a93d8a16bac703ae0ab28d784f3048a15209b2dd80c5ab1acd2dc8163",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzFawDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnN0YWJsZS1sYWIBBm1ldGhvZDRjYW5jZWw="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x70C9Ed8761ac32887e536D03657bfADAD436210F": "agree",
+        "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba": "agree",
+        "0x91d3032d39177dD187665b345954fA5809D8a574": "idle",
+        "0xAfA5B76d8c2b976097406893b59C499b5D92D878": "agree",
+        "0xc0570E16E935531dee442333d199fCdA4Ba9e6f1": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "ERROR",
+              "error": "Exception: STALE_REVISION"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "ERROR",
+              "error": "Exception: STALE_REVISION"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0x91d3032d39177dD187665b345954fA5809D8a574",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0xAfA5B76d8c2b976097406893b59C499b5D92D878",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0xc0570E16E935531dee442333d199fCdA4Ba9e6f1",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x70C9Ed8761ac32887e536D03657bfADAD436210F",
+              "vote": "agree",
+              "execution": "ERROR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "create-uncertain-market",
+      "expected_error": null,
+      "hash": "0x7f1510eb7b5ff8d72b589cb139b7b96f651063d993b99d7277f4a7247fa23a3e",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzHWx1bmNlcnRhaW4tbGFi1AIweDllNjk4ODIyNjg0M2RkNTgzMmIwMzJjMDZjYWVmY2FhYjIyZDhjMTa0E3sibGVmdCI6W3siaWQiOiJqb2ItYWxwaGEiLCJkZXNjcmlwdGlvbiI6IkFscGhhOiBhIHNtYWxsIGRvY3VtZW50YXRpb24gdGVzdCB3b3JrbG9hZC4ifSx7ImlkIjoiam9iLWJldGEiLCJkZXNjcmlwdGlvbiI6IkJldGE6IGEgQ1BVLWhlYXZ5IGNvbXBpbGVyIHRlc3Qgd29ya2xvYWQuIn1dLCJyaWdodCI6W3siaWQiOiJiZW5jaC1xdWlldCIsImRlc2NyaXB0aW9uIjoiUXVpZXQ6IGEgbG93LW5vaXNlIHRlc3QgYmVuY2guIn0seyJpZCI6ImJlbmNoLWZhc3QiLCJkZXNjcmlwdGlvbiI6IkZhc3Q6IGEgaGlnaC1zcGVlZCB0ZXN0IGJlbmNoLiJ9XX0GbWV0aG9kbGNyZWF0ZV9tYXJrZXQ="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x215c6BA80EdD9a47856D63E959A32AFE6B5Aa575": "agree",
+        "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba": "agree",
+        "0x9e716966Fbc31a155250000CfC6C5E0aefbA9a95": "idle",
+        "0xE7a7f994107b733CcBe5d0a288FB37A9EB3A0687": "idle",
+        "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0xE7a7f994107b733CcBe5d0a288FB37A9EB3A0687",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x9e716966Fbc31a155250000CfC6C5E0aefbA9a95",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "uncertain-seal-left",
+      "expected_error": null,
+      "hash": "0x7536cead4953f0c1456d1e0a7bfad6752cbd4a109d673cc81fa37a7215c9e3a9",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzJcQDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnVuY2VydGFpbi1sYWIBJGxlZnT8DFsiQ2hvb3NlIHdoYXRldmVyIGlzIGFwcHJvcHJpYXRlOyBJIGhhdmUgbm90IHNwZWNpZmllZCBhbnkgb3JkZXJpbmcgb3IgYWNjZXB0YWJpbGl0eSBvZiB0aGVzZSBiZW5jaGVzLiIsIkJvdGggYmVuY2hlcyBhcmUgYWNjZXB0YWJsZS4gUHJlZmVyIHRoZSBoaWdoLXNwZWVkIEZhc3QgYmVuY2ggZmlyc3QsIHRoZW4gdGhlIGxvdy1ub2lzZSBRdWlldCBiZW5jaC4iXQZtZXRob2SEAXNlYWxfcHJlZmVyZW5jZXM="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x70C9Ed8761ac32887e536D03657bfADAD436210F": "agree",
+        "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba": "idle",
+        "0x87DD12658711db28B41C1fBB516236088D214fAD": "agree",
+        "0x8D9E52A3c9Ad95D2Be9987AD2C3919F5460DDc3e": "agree",
+        "0x9e716966Fbc31a155250000CfC6C5E0aefbA9a95": "idle"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0x87DD12658711db28B41C1fBB516236088D214fAD",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x9e716966Fbc31a155250000CfC6C5E0aefbA9a95",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x70C9Ed8761ac32887e536D03657bfADAD436210F",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "uncertain-seal-right",
+      "expected_error": null,
+      "hash": "0xbf292a90327fd12d031360c28cda7f72eaa5663dcbef78bbbc45cd40920fe7f7",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x9E6988226843dD5832B032c06cAefCaAB22d8C16",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzJcQDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnVuY2VydGFpbi1sYWIJLHJpZ2h0nBBbIkJvdGggd29ya2xvYWRzIGFyZSBhY2NlcHRhYmxlLiBQcmVmZXIgdGhlIENQVS1oZWF2eSBCZXRhIGNvbXBpbGVyIHdvcmtsb2FkIGZpcnN0LCB0aGVuIHRoZSBzbWFsbCBBbHBoYSBkb2N1bWVudGF0aW9uIHdvcmtsb2FkLiIsIkJvdGggd29ya2xvYWRzIGFyZSBhY2NlcHRhYmxlLiBQcmVmZXIgdGhlIHNtYWxsIEFscGhhIGRvY3VtZW50YXRpb24gd29ya2xvYWQgZmlyc3QsIHRoZW4gdGhlIENQVS1oZWF2eSBCZXRhIGNvbXBpbGVyIHdvcmtsb2FkLiJdBm1ldGhvZIQBc2VhbF9wcmVmZXJlbmNlcw=="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x3720CfC92ACB431F215673A7b5F315B5efe1A4D6": "idle",
+        "0x8D9E52A3c9Ad95D2Be9987AD2C3919F5460DDc3e": "agree",
+        "0xbf44ED2c27E8Cc6b36FBF6890B8fDAD3b220cC88": "agree",
+        "0xc3Acc646761d7BC43a47ccEB1F60E7078B1d51Fc": "agree",
+        "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x3720CfC92ACB431F215673A7b5F315B5efe1A4D6",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x8D9E52A3c9Ad95D2Be9987AD2C3919F5460DDc3e",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0xc3Acc646761d7BC43a47ccEB1F60E7078B1d51Fc",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "compile-uncertain-side",
+      "expected_error": null,
+      "hash": "0x2b07c10a184a563d8afdc6d28d66a962602dbb0c5b217aaff62d4abb08e04015",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzHcQDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnVuY2VydGFpbi1sYWIRJGxlZnQGbWV0aG9kZGNvbXBpbGVfc2lkZQ=="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x215c6BA80EdD9a47856D63E959A32AFE6B5Aa575": "agree",
+        "0x87DD12658711db28B41C1fBB516236088D214fAD": "idle",
+        "0x9e9A34d5C2E5B5f494a010a7dfA62eA54113645E": "agree",
+        "0xc0570E16E935531dee442333d199fCdA4Ba9e6f1": "idle",
+        "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "idle",
+              "execution": "ERROR",
+              "error": "Validator execution cancelled after quorum"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0xf66D41686dDa4B13E0B29Bf432C7E6F1C008d639",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x215c6BA80EdD9a47856D63E959A32AFE6B5Aa575",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x87DD12658711db28B41C1fBB516236088D214fAD",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x9e9A34d5C2E5B5f494a010a7dfA62eA54113645E",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "unknown-cannot-solve",
+      "expected_error": "PREFERENCES_NOT_READY",
+      "hash": "0xc54f4564177a1342ad59895616531a41c95178a75dfebe6df216fd98a6a3c0e1",
+      "status": "FINALIZED",
+      "execution": "ERROR",
+      "from": "0x0A9AA59C98bEBAC8Ec6E0CA0209868E2B23012c3",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzFcQDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnVuY2VydGFpbi1sYWIZBm1ldGhvZCxzb2x2ZQ=="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x215c6BA80EdD9a47856D63E959A32AFE6B5Aa575": "agree",
+        "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba": "agree",
+        "0x9e716966Fbc31a155250000CfC6C5E0aefbA9a95": "agree",
+        "0xAfA5B76d8c2b976097406893b59C499b5D92D878": "idle",
+        "0xE7a7f994107b733CcBe5d0a288FB37A9EB3A0687": "idle"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "ERROR",
+              "error": "Exception: PREFERENCES_NOT_READY"
+            },
+            {
+              "mode": "validator",
+              "vote": "agree",
+              "execution": "ERROR",
+              "error": "Exception: PREFERENCES_NOT_READY"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0xE7a7f994107b733CcBe5d0a288FB37A9EB3A0687",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x7D2dE07A26B4Da7164210364e6F09BDA31F597Ba",
+              "vote": "agree",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0xAfA5B76d8c2b976097406893b59C499b5D92D878",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x9e716966Fbc31a155250000CfC6C5E0aefbA9a95",
+              "vote": "agree",
+              "execution": "ERROR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "cancel-uncertain-market",
+      "expected_error": null,
+      "hash": "0x7ebeef2d91ef59e9d9a529e6559bbd8bcff4b9c72c77af6c5dfad00c0dfe83ac",
+      "status": "FINALIZED",
+      "execution": "SUCCESS",
+      "from": "0x9E6988226843dD5832B032c06cAefCaAB22d8C16",
+      "to": "0x07C2779514414A96cA3c9359Ff21bbd5810aC183",
+      "value": 0,
+      "data": {
+        "calldata": {
+          "base64": "FgRhcmdzFcQDMHgwYTlhYTU5Yzk4YmViYWM4ZWM2ZTBjYTAyMDk4NjhlMmIyMzAxMmMzOnVuY2VydGFpbi1sYWIZBm1ldGhvZDRjYW5jZWw="
+        }
+      },
+      "leader_only": false,
+      "votes": {
+        "0x5Bf68b9b661C86D6083B2F67faf19fF649a8a203": "agree",
+        "0x87DD12658711db28B41C1fBB516236088D214fAD": "agree",
+        "0x8D9E52A3c9Ad95D2Be9987AD2C3919F5460DDc3e": "idle",
+        "0x91d3032d39177dD187665b345954fA5809D8a574": "idle",
+        "0xD40f99BB049b50311f7d0C4E76fAd47bD12C9774": "agree"
+      },
+      "rounds": [
+        {
+          "round": "Accepted",
+          "leaders": [
+            {
+              "mode": "leader",
+              "vote": null,
+              "execution": "SUCCESS"
+            },
+            {
+              "mode": "validator",
+              "vote": "idle",
+              "execution": "ERROR",
+              "error": "Validator execution cancelled after quorum"
+            }
+          ],
+          "validators": [
+            {
+              "address": "0x5Bf68b9b661C86D6083B2F67faf19fF649a8a203",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0xD40f99BB049b50311f7d0C4E76fAd47bD12C9774",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            },
+            {
+              "address": "0x91d3032d39177dD187665b345954fA5809D8a574",
+              "vote": "idle",
+              "execution": "ERROR"
+            },
+            {
+              "address": "0x87DD12658711db28B41C1fBB516236088D214fAD",
+              "vote": "agree",
+              "execution": "SUCCESS"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "final_reads": [
+    {
+      "method": "get_market",
+      "args": [
+        "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:stable-lab"
+      ],
+      "value": {
+        "approvals": [
+          "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3",
+          "0x9e6988226843dd5832b032c06caefcaab22d8c16"
+        ],
+        "certificate": {
+          "checked": 7,
+          "forced_pairs": [],
+          "left_ranks": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "matchings": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "rejected": [
+            {
+              "assignment": [
+                -1,
+                -1
+              ],
+              "blocking_pair": [
+                0,
+                0
+              ]
+            },
+            {
+              "assignment": [
+                -1,
+                0
+              ],
+              "blocking_pair": [
+                0,
+                1
+              ]
+            },
+            {
+              "assignment": [
+                -1,
+                1
+              ],
+              "blocking_pair": [
+                0,
+                0
+              ]
+            },
+            {
+              "assignment": [
+                0,
+                -1
+              ],
+              "blocking_pair": [
+                1,
+                1
+              ]
+            },
+            {
+              "assignment": [
+                1,
+                -1
+              ],
+              "blocking_pair": [
+                0,
+                0
+              ]
+            }
+          ],
+          "right_ranks": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        "certificate_hash": "04ae3a3b227194ea1a7bb0eea73cad1e9a013f7998bce0d65856934ffa897407",
+        "compiled": {
+          "left": {
+            "rows": [
+              {
+                "excluded": [],
+                "quote": "Both benches are acceptable. Prefer the low-noise Quiet bench first, then the high-speed Fast bench.",
+                "ranked": [
+                  "bench-quiet",
+                  "bench-fast"
+                ],
+                "status": "KNOWN"
+              },
+              {
+                "excluded": [],
+                "quote": "Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench.",
+                "ranked": [
+                  "bench-fast",
+                  "bench-quiet"
+                ],
+                "status": "KNOWN"
+              }
+            ]
+          },
+          "right": {
+            "rows": [
+              {
+                "excluded": [],
+                "quote": "Both workloads are acceptable. Prefer the CPU-heavy Beta compiler workload first, then the small Alpha documentation workload.",
+                "ranked": [
+                  "job-beta",
+                  "job-alpha"
+                ],
+                "status": "KNOWN"
+              },
+              {
+                "excluded": [],
+                "quote": "Both workloads are acceptable. Prefer the small Alpha documentation workload first, then the CPU-heavy Beta compiler workload.",
+                "ranked": [
+                  "job-alpha",
+                  "job-beta"
+                ],
+                "status": "KNOWN"
+              }
+            ]
+          }
+        },
+        "id": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:stable-lab",
+        "owners": {
+          "left": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3",
+          "right": "0x9e6988226843dd5832b032c06caefcaab22d8c16"
+        },
+        "revision": 8,
+        "roster": {
+          "left": [
+            {
+              "description": "Alpha: a small documentation test workload.",
+              "id": "job-alpha"
+            },
+            {
+              "description": "Beta: a CPU-heavy compiler test workload.",
+              "id": "job-beta"
+            }
+          ],
+          "right": [
+            {
+              "description": "Quiet: a low-noise test bench.",
+              "id": "bench-quiet"
+            },
+            {
+              "description": "Fast: a high-speed test bench.",
+              "id": "bench-fast"
+            }
+          ]
+        },
+        "roster_hash": "7c056191383abfb2ed4664b1bbc0c7145a50964023605de5f0a8e66d45a19b1a",
+        "selection": {
+          "assignment": [
+            0,
+            1
+          ],
+          "digest": "ad18e3ac1b8871636dac8049d5fb96a886b86825bf07f0857cce845b53da7cc8",
+          "index": 0
+        },
+        "state": "COMMITTED",
+        "statements": {
+          "left": [
+            "Both benches are acceptable. Prefer the low-noise Quiet bench first, then the high-speed Fast bench.",
+            "Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench."
+          ],
+          "right": [
+            "Both workloads are acceptable. Prefer the CPU-heavy Beta compiler workload first, then the small Alpha documentation workload.",
+            "Both workloads are acceptable. Prefer the small Alpha documentation workload first, then the CPU-heavy Beta compiler workload."
+          ]
+        }
+      }
+    },
+    {
+      "method": "get_market",
+      "args": [
+        "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab"
+      ],
+      "value": {
+        "approvals": [],
+        "certificate": null,
+        "certificate_hash": "",
+        "compiled": {
+          "left": {
+            "rows": [
+              {
+                "excluded": [],
+                "quote": "Choose whatever is appropriate; I have not specified any ordering or acceptability of these benches.",
+                "ranked": [],
+                "status": "UNKNOWN"
+              },
+              {
+                "excluded": [],
+                "quote": "Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench.",
+                "ranked": [
+                  "bench-fast",
+                  "bench-quiet"
+                ],
+                "status": "KNOWN"
+              }
+            ]
+          }
+        },
+        "id": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3:uncertain-lab",
+        "owners": {
+          "left": "0x0a9aa59c98bebac8ec6e0ca0209868e2b23012c3",
+          "right": "0x9e6988226843dd5832b032c06caefcaab22d8c16"
+        },
+        "revision": 4,
+        "roster": {
+          "left": [
+            {
+              "description": "Alpha: a small documentation test workload.",
+              "id": "job-alpha"
+            },
+            {
+              "description": "Beta: a CPU-heavy compiler test workload.",
+              "id": "job-beta"
+            }
+          ],
+          "right": [
+            {
+              "description": "Quiet: a low-noise test bench.",
+              "id": "bench-quiet"
+            },
+            {
+              "description": "Fast: a high-speed test bench.",
+              "id": "bench-fast"
+            }
+          ]
+        },
+        "roster_hash": "ff7dc94cb56c769ab9c61eb6f5e1b678315d7459b36a7a53d4d012e6c7487c9e",
+        "selection": null,
+        "state": "CANCELLED",
+        "statements": {
+          "left": [
+            "Choose whatever is appropriate; I have not specified any ordering or acceptability of these benches.",
+            "Both benches are acceptable. Prefer the high-speed Fast bench first, then the low-noise Quiet bench."
+          ],
+          "right": [
+            "Both workloads are acceptable. Prefer the CPU-heavy Beta compiler workload first, then the small Alpha documentation workload.",
+            "Both workloads are acceptable. Prefer the small Alpha documentation workload first, then the CPU-heavy Beta compiler workload."
+          ]
+        }
+      }
+    }
+  ],
+  "state_variant": "latest-final",
+  "success_count": 15,
+  "expected_rejection_count": 7
+}

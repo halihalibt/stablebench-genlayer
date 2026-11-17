@@ -13,7 +13,9 @@ const protocol=JSON.parse(await client.readContract({address:d.contract,function
 check(protocol.version===d.protocol&&protocol.chain_id===61999,'PROTOCOL_MISMATCH');
 const output={protocol,verified_at:new Date().toISOString(),chain_id:61999,contract:d.contract,source_sha256:digest,transactions:[],final_reads:[],state_variant:'latest-final'};
 for(const e of j.transactions){
- const raw=await client.getTransaction({hash:e.hash}),r=compact(raw);
+ const wire=await rpc('eth_getTransactionByHash',[e.hash]);
+ check(wire?.hash===e.hash,'RPC_HASH_MISMATCH '+e.label);
+ const raw={...wire,statusName:wire.status,data:{...wire.data,calldata:typeof wire.data?.calldata==='string'?{base64:wire.data.calldata}:wire.data?.calldata}},r=compact(raw);
  check(raw.value!==undefined&&BigInt(raw.value)===0n,'NONZERO_ATTACHED_VALUE '+e.label);
  check(r.status==='FINALIZED'&&(r.execution==='SUCCESS')===!e.expected_error,'BAD_FINALITY_EXECUTION '+e.label);
  const votes=Object.values(r.votes??{}),agree=votes.filter(v=>v==='agree').length,disagree=votes.filter(v=>v==='disagree').length;
